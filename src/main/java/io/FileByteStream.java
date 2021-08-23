@@ -1,13 +1,13 @@
 package io;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 
 /**
  * @author qinweizhao
  */
 @SuppressWarnings("all")
 public class FileByteStream {
+
 
     public static void main(String[] args) {
 
@@ -122,4 +122,7 @@ public class FileByteStream {
             }
         }
     }
+
+
+
 }
