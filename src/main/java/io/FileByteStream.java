@@ -7,7 +7,7 @@ import java.nio.charset.StandardCharsets;
  * @author qinweizhao
  */
 @SuppressWarnings("all")
-public class IFileInputStream {
+public class FileByteStream {
 
     public static void main(String[] args) {
 
