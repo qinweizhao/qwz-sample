@@ -6,7 +6,7 @@ import java.io.*;
  * @author qinweizhao
  */
 @SuppressWarnings("all")
-public class FileByteStream {
+public class FileByteStreamMain {
 
 
     public static void main(String[] args) {
