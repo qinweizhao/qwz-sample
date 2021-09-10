@@ -21,10 +21,10 @@ public class StreamMain {
 //        foreachAndFindAndMatch();
 
         // filter
-//        filter();
+        filter();
 
         // mapAndFlatMap
-        mapAndFlatMap();
+//        mapAndFlatMap();
     }
 
     /**
