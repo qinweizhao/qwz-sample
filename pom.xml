@@ -6,7 +6,14 @@
 
     <groupId>com.qinweizhao</groupId>
     <artifactId>qwz-java-sample</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>java-io</module>
+        <module>java-concurrent</module>
+        <module>java-eight-features</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -53,5 +60,8 @@
         </dependency>
 
     </dependencies>
+
+
+
 
 </project>

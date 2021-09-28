@@ -1,4 +1,4 @@
-package multithreading;
+package com.qinweizhao;
 
 import java.util.concurrent.Callable;
 
