@@ -23,7 +23,7 @@ qwz-code-sample
 
 | code-samples | 文章 |
 | ---- | ---- |
-|  spring-boot-config    | [Spring Boot 配置文件](https://github.com/qinweizhao/doc/blob/master/2021/09/Spring Boot 配置文件.md) |
+|  spring-boot-config    | [Spring Boot 配置文件](https://www.qinweizhao.com/?p=38) |
 |  spring-boot-logging    | [Spring Boot 日志](https://www.qinweizhao.com/?p=30) |
 |  |  |
 
