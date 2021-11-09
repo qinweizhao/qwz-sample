@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package qinweizhao;
 
 import java.util.*;
 import java.util.stream.Collectors;

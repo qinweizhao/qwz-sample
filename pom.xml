@@ -4,16 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.qinweizhao</groupId>
+    <groupId>qinweizhao</groupId>
     <artifactId>qwz-code-sample</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
 
     <modules>
-        <module>java-io</module>
-        <module>java-concurrent</module>
-        <module>java-eight-features</module>
-        <module>base</module>
+        <module>basic</module>
+        <module>concurrent</module>
+        <module>framework</module>
+        <module>middleware</module>
+        <module>microservice</module>
     </modules>
 
     <properties>

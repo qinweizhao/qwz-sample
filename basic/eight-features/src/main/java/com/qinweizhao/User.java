@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package qinweizhao;
 
 /**
  * @author YVKG

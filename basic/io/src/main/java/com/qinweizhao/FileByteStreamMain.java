@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package qinweizhao;
 
 import java.io.*;
 
@@ -10,6 +10,7 @@ public class FileByteStreamMain {
 
 
     public static void main(String[] args) {
+        File file = new File("ddd");
 
         // readString
 //        String fileName = "src/main/resources/io/read.txt";
