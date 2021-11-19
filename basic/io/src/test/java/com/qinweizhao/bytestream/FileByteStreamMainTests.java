@@ -28,7 +28,6 @@ class FileByteStreamMainTests {
         FileByteStreamMain.readStringPlus(fileName);
     }
 
-
     /**
      * 写入到文件中
      */
