@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.qinweizhao</groupId>
-    <artifactId>spring-boot-config</artifactId>
+    <artifactId>spring-boot-config-value-injection</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-config</name>
     <description>spring-boot-config</description>
