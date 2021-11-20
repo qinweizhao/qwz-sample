@@ -1,4 +1,4 @@
-package qinweizhao;
+package com.qinweizhao.stream;
 
 /**
  * @author YVKG

@@ -1,28 +1,13 @@
-package qinweizhao;
+package com.qinweizhao.bytestream;
 
 import java.io.*;
 
 /**
  * @author qinweizhao
  */
-@SuppressWarnings("all")
 public class FileByteStreamMain {
+    private FileByteStreamMain() {
 
-
-    public static void main(String[] args) {
-        File file = new File("ddd");
-
-        // readString
-//        String fileName = "src/main/resources/io/read.txt";
-//        readString(fileName);
-
-        //readStringPlus
-        String fileName = "src/main/resources/io/read.txt";
-        readStringPlus(fileName);
-
-        // writeString
-//        String str = "hello word";
-//        writeString(str);
     }
 
     /**
@@ -59,7 +44,6 @@ public class FileByteStreamMain {
      *
      * @param fileName 文件名称
      */
-
     public static void readStringPlus(String fileName) {
         InputStream fis = null;
         Reader reader = null;

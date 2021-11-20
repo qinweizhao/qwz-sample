@@ -1,31 +1,17 @@
-package qinweizhao;
+package com.qinweizhao.stream;
 
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 /**
  * @author qinweizhao
  */
-@SuppressWarnings("all")
 public class StreamMain {
 
-
-    public static void main(String[] args) {
-
-        // createStream
-//        createStream();
-
-        // foreachAndFindAndMatch
-//        foreachAndFindAndMatch();
-
-        // filter
-        filter();
-
-        // mapAndFlatMap
-//        mapAndFlatMap();
+    private StreamMain() {
     }
+
 
     /**
      * 创建流
@@ -36,10 +22,10 @@ public class StreamMain {
         System.out.println("1、开始");
         List<String> list = Arrays.asList("a", "b", "c");
         // 创建一个顺序流
-        Stream<String> stream1 = list.stream();
+        java.util.stream.Stream<String> stream1 = list.stream();
         stream1.forEach(System.out::println);
         // 创建一个并行流
-        Stream<String> parallelStream1 = list.parallelStream();
+        java.util.stream.Stream<String> parallelStream1 = list.parallelStream();
         parallelStream1.forEach(System.out::println);
         System.out.println("1、结束");
 
@@ -53,13 +39,13 @@ public class StreamMain {
         // 3、of()、iterate()、generate()
         System.out.println("3、开始");
         // of()
-        Stream<Integer> stream3 = Stream.of(1, 2, 3, 4, 5, 6);
+        java.util.stream.Stream<Integer> stream3 = java.util.stream.Stream.of(1, 2, 3, 4, 5, 6);
         stream3.forEach(System.out::println);
         // iterate()
-        Stream<Integer> stream4 = Stream.iterate(0, (x) -> x + 3).limit(4);
+        java.util.stream.Stream<Integer> stream4 = java.util.stream.Stream.iterate(0, (x) -> x + 3).limit(4);
         stream4.forEach(System.out::println);
         // generate()
-        Stream<Double> stream5 = Stream.generate(Math::random).limit(3);
+        java.util.stream.Stream<Double> stream5 = java.util.stream.Stream.generate(Math::random).limit(3);
         stream5.forEach(System.out::println);
         System.out.println("3、结束");
 
@@ -113,7 +99,7 @@ public class StreamMain {
 
         //min
         Optional<String> min = list.stream().min(Comparator.comparing(String::length));
-        System.out.println("最短的字符串：" + max.get());
+        System.out.println("最短的字符串：" + min.get());
 
         //count
         long count = list.stream().filter(item ->
@@ -261,7 +247,7 @@ public class StreamMain {
         list.add(new User(21,"wei","male", "Washington"));
         list.add(new User(22,"zhao","female", "Washington"));
         // 按年龄升序排序（自然排序）
-        Stream<String> sorted = list.stream().sorted(Comparator.comparing(User::getAge)).map(User::getUsername);
+        java.util.stream.Stream<String> sorted = list.stream().sorted(Comparator.comparing(User::getAge)).map(User::getUsername);
         // 按年龄倒序排序
         List<User> sorted1 = list.stream().sorted(Comparator.comparing(User::getAge).reversed()).collect(Collectors.toList());
 
@@ -273,17 +259,17 @@ public class StreamMain {
      * 提取/组合
      * 流也可以进行合并、去重、限制、跳过等操作。
      */
-    public static void distinctAndSkipAndLimit(){
-        String[] arr1 = { "a", "b", "c", "d" };
-        String[] arr2 = { "d", "e", "f", "g" };
-        Stream<String> stream1 = Stream.of(arr1);
-        Stream<String> stream2 = Stream.of(arr2);
+    public static void distinctAndSkipAndLimit() {
+        String[] arr1 = {"a", "b", "c", "d"};
+        String[] arr2 = {"d", "e", "f", "g"};
+        java.util.stream.Stream<String> stream1 = java.util.stream.Stream.of(arr1);
+        java.util.stream.Stream<String> stream2 = java.util.stream.Stream.of(arr2);
         // concat:合并两个流 distinct：去重
-        List<String> newList = Stream.concat(stream1, stream2).distinct().collect(Collectors.toList());
+        List<String> newList = java.util.stream.Stream.concat(stream1, stream2).distinct().collect(Collectors.toList());
         // limit：限制从流中获得前n个数据
-        List<Integer> collect = Stream.iterate(1, x -> x + 2).limit(10).collect(Collectors.toList());
+        List<Integer> collect = java.util.stream.Stream.iterate(1, x -> x + 2).limit(10).collect(Collectors.toList());
         // skip：跳过前n个数据
-        List<Integer> collect2 = Stream.iterate(1, x -> x + 2).skip(1).limit(5).collect(Collectors.toList());
+        List<Integer> collect2 = java.util.stream.Stream.iterate(1, x -> x + 2).skip(1).limit(5).collect(Collectors.toList());
 
         System.out.println("流合并：" + newList);
         System.out.println("limit：" + collect);
