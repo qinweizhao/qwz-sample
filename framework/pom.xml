@@ -18,8 +18,11 @@
     </properties>
 
     <modules>
-        <module>spring-boot-config</module>
+        <module>spring-boot-config-value-injection</module>
         <module>spring-boot-logging</module>
+        <module>spring-config-value-injection</module>
+        <module>spring-config-value-injection</module>
+        <module>spring-config-value-injection</module>
     </modules>
 
 
