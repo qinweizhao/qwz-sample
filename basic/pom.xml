@@ -12,6 +12,8 @@
 
     <artifactId>basic</artifactId>
 
+    <name>b->[basic]</name>
+
     <packaging>pom</packaging>
 
     <properties>
@@ -20,15 +22,15 @@
     </properties>
 
     <modules>
-        <module>basic-features</module>
-        <module>basic-io</module>
-        <module>basic-container</module>
-        <module>basic-exception</module>
-        <module>basic-thread</module>
-        <module>basic-socket</module>
-        <module>basic-reflect</module>
-        <module>basic-data-structure</module>
-        <module>basic-class</module>
-        <module>basic-array</module>
+        <module>b-features</module>
+        <module>b-io</module>
+        <module>b-container</module>
+        <module>b-exception</module>
+        <module>b-thread</module>
+        <module>b-socket</module>
+        <module>b-reflect</module>
+        <module>b-data-structure</module>
+        <module>b-class</module>
+        <module>b-array</module>
     </modules>
 </project>

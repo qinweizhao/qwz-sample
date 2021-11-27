@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>basic-class</artifactId>
+    <artifactId>b-reflect</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

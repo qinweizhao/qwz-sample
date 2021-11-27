@@ -8,8 +8,7 @@
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>basic-array</artifactId>
+    <artifactId>b-array</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

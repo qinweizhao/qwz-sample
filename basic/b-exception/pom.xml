@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>basic-data-structure</artifactId>
+    <artifactId>b-exception</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
