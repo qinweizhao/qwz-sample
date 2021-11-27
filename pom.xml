@@ -8,14 +8,14 @@
     <artifactId>qwz-code-sample</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
+    <name>a-parent</name>
 
     <modules>
         <module>basic</module>
         <module>concurrent</module>
         <module>framework</module>
         <module>middleware</module>
-        <module>microservice</module>
-
+        <module>distributed</module>
     </modules>
 
     <properties>

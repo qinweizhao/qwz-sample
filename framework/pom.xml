@@ -11,6 +11,7 @@
 
     <artifactId>framework</artifactId>
     <packaging>pom</packaging>
+    <name>f---[framework]</name>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -18,11 +19,8 @@
     </properties>
 
     <modules>
-        <module>spring-boot-config-value-injection</module>
-        <module>spring-boot-logging</module>
-        <module>spring-config-value-injection</module>
-        <module>spring-config-value-injection</module>
-        <module>spring-config-value-injection</module>
+        <module>f-spring</module>
+        <module>f-spring-boot</module>
     </modules>
 
 

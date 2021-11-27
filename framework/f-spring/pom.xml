@@ -3,16 +3,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>qwz-code-sample</artifactId>
+        <artifactId>framework</artifactId>
         <groupId>qinweizhao</groupId>
         <version>1.0.0</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>basic</artifactId>
+    <artifactId>f-spring</artifactId>
 
-    <name>b---[basic]</name>
+    <name>fs---[framework-spring]</name>
 
     <packaging>pom</packaging>
 
@@ -22,15 +21,7 @@
     </properties>
 
     <modules>
-        <module>b-features</module>
-        <module>b-io</module>
-        <module>b-container</module>
-        <module>b-exception</module>
-        <module>b-thread</module>
-        <module>b-socket</module>
-        <module>b-reflect</module>
-        <module>b-data-structure</module>
-        <module>b-class</module>
-        <module>b-array</module>
+        <module>fs-config</module>
     </modules>
+
 </project>

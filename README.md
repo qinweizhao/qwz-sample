@@ -1,29 +1,32 @@
 # qwz-code-sample
 
-## 目录结构
+## 结构
 
 ```
 qwz-code-sample
 ├─basic 基础知识
-│  ├─eight-features Java8 新特性
-│  ├─io 输入输出流
+│  ├─b-array Java8 
+│  ├─b-class 常用类
+│  ├─b-container 容器
+│  ├─b-data-structure 数据结构
+│  ├─b-exception 异常
+│  ├─b-features 新特性
+│  ├─b-io 输入输出流
+│  ├─b-reflect 反射
+│  ├─b-socket 网络编程
+│  ├─b-thread 多线程
 │
 ├─concurrent 并发编程
 │
+├─distributed 分布式
+│
 ├─framework 应用框架
-│  ├─spring-boot-config SpringBoot 配置文件
-│  ├─spring-boot-logging SpringBoot 日志
-│ 
-├─microservice 微服务
+│  ├─f-spring Spring
+│    ├─fs-config 配置
+│  ├─f-spring-boot SpringBoot
+│    ├─fsb-config 配置
+│    ├─fsb-date-format 数据格式化
+│    ├─fsb-logging 日志
 │ 
 ├─middleware 中间件
 ```
-
-## 代码索引
-
-| code-samples | 文章 |
-| ---- | ---- |
-|  spring-boot-config    | [Spring Boot 配置文件](https://www.qinweizhao.com/?p=38) |
-|  spring-boot-logging    | [Spring Boot 日志](https://www.qinweizhao.com/?p=30) |
-|  |  |
-

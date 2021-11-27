@@ -1,7 +1,6 @@
 package com.qinweizhao;
 
 import com.qinweizhao.entity.Person;
-import com.qinweizhao.entity.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,24 +9,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 class ConfigApplicationTests {
 
     @Autowired
-    User user;
-
-    @Autowired
     Person person;
 
     @Test
     void contextLoads() {
 
     }
-
-    /**
-     * 配置文件值注入( @Value 方式)
-     */
-    @Test
-    void test1() {
-        System.out.println(user);
-    }
-
     /**
      * 配置文件值注入( @ConfigurationProperties 方式)
      */
