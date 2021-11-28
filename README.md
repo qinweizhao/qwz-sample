@@ -1,6 +1,6 @@
 <p align="center">
   <a class="logo" href="https://github.com/qinweizhao/qwz-code-sample">
-    <img src="https://cdn.jsdelivr.net/gh/qinweizhao/qwz-code-sample@master/CodeSample.png" height="80" width="45%" alt="CodeSample">
+    <img src="https://cdn.jsdelivr.net/gh/qinweizhao/qwz-code-sample@master/logo.png" height="80" width="45%" alt="CodeSample">
   </a>
 </p>
 
@@ -15,7 +15,7 @@
 </p>
 
 
-![Alt](https://repobeats.axiom.co/api/embed/a9d167d82b691b1c1e7ad622262698a15b6fc146.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/4956f5123e9076bf13bf5b3c56d641fd43c26a9d.svg "Repobeats analytics image")
 
 ## 1、简介
 
