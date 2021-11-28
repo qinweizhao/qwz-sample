@@ -1,6 +1,27 @@
-# qwz-code-sample
+<p align="center">
+  <a class="logo" href="https://github.com/qinweizhao/qwz-code-sample">
+    <img src="https://cdn.jsdelivr.net/gh/qinweizhao/qwz-code-sample@master/CodeSample.png" height="80" width="45%" alt="CodeSample">
+  </a>
+</p>
 
-## 结构
+<p align="center">
+👉 <a href="https://www.qinweizhao.com">https://www.qinweizhao.com</a> 👈
+</p>
+
+<p align="center">
+  <a href="https://github.com/qinweizhao/qwz-code-sample" target="_blank">
+    <img src="https://img.shields.io/badge/Release-1.0.0-green" alt="Release"/>
+  </a>
+</p>
+
+
+![Alt](https://repobeats.axiom.co/api/embed/a9d167d82b691b1c1e7ad622262698a15b6fc146.svg "Repobeats analytics image")
+
+## 1、简介
+
+代码示例
+
+## 2、结构
 
 ```
 qwz-code-sample
