@@ -23,5 +23,6 @@
         <module>fsb-config</module>
         <module>fsb-date-format</module>
         <module>fsb-logging</module>
+        <module>fsb-starter</module>
     </modules>
 </project>

@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.qinweizhao</groupId>
-    <artifactId>spring-boot-date-format</artifactId>
+    <artifactId>fsb-date-format</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>fsb-date-format</name>
     <description>spring-boot-date-format</description>

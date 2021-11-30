@@ -8,14 +8,18 @@
         <version>2.5.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.qinweizhao</groupId>
-    <artifactId>spring-boot-logging</artifactId>
+    <artifactId>fsb-logging</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <description>spring-boot-logging</description>
+
     <name>fsb-logging</name>
+    <description>spring-boot-logging</description>
+
     <properties>
         <java.version>11</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
