@@ -1,7 +1,7 @@
 package com.qinweizhao.jvm.start;
 
 /**
- * 栈结构
+ * JVM 的架构模型-栈结构
  * @author qinweizhao
  * @since 2021/12/14
  */
@@ -29,6 +29,7 @@ public class StackStructure {
      * ================
      * 使用命令进行反编译
      * javap -v StackStructure.class
+     * 编译后查看指令
      *
      * @param args args
      *
