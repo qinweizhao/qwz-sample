@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
+ * 迭代器移除元素
  * @author qinweizhao
  * @since 2021/11/26
  */

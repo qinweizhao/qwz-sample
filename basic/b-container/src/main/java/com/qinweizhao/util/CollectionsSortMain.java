@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ * 集合排序
+ *
  * @author qinweizhao
  * @since 2021/11/26
  */
