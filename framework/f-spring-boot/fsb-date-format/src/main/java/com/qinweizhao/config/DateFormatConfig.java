@@ -31,7 +31,7 @@ import java.util.TimeZone;
 @JsonComponent
 public class DateFormatConfig {
 
-    private static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     /**
      * 日期格式化
@@ -39,7 +39,7 @@ public class DateFormatConfig {
     public static class DateJsonSerializer extends JsonSerializer<Date> {
         @Override
         public void serialize(Date date, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
-            jsonGenerator.writeString(dateFormat.format(date));
+            jsonGenerator.writeString(DATE_FORMAT.format(date));
         }
     }
 
@@ -50,7 +50,7 @@ public class DateFormatConfig {
         @Override
         public Date deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException, JsonProcessingException {
             try {
-                return dateFormat.parse(jsonParser.getText());
+                return DATE_FORMAT.parse(jsonParser.getText());
             } catch (ParseException e) {
                 throw new RuntimeException(e);
             }

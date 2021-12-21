@@ -32,5 +32,4 @@ public class User {
         this.timezone = timezone;
     }
 
-    //省略getters&setters
 }
