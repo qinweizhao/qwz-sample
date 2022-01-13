@@ -1,6 +1,6 @@
 <p align="center">
-  <a class="logo" href="https://github.com/qinweizhao/qwz-code-sample">
-    <img src="https://cdn.jsdelivr.net/gh/qinweizhao/qwz-code-sample@master/logo.png" height="80" width="45%" alt="CodeSample">
+  <a class="logo" href="https://github.com/qinweizhao/qwz-sample">
+    <img src="https://cdn.jsdelivr.net/gh/qinweizhao/qwz-sample@master/logo.png" height="80" width="45%" alt="CodeSample">
   </a>
 </p>
 
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/qinweizhao/qwz-code-sample" target="_blank">
+  <a href="https://github.com/qinweizhao/qwz-sample" target="_blank">
     <img src="https://img.shields.io/badge/Release-1.0.0-green" alt="Release"/>
   </a>
 </p>
@@ -24,7 +24,7 @@
 ## 2、结构
 
 ```
-qwz-code-sample
+qwz-sample
 ├─basic 基础知识
 │  ├─b-array Java8 
 │  ├─b-class 常用类
