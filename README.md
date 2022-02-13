@@ -15,7 +15,7 @@
 </p>
 
 
-![Alt](https://repobeats.axiom.co/api/embed/4956f5123e9076bf13bf5b3c56d641fd43c26a9d.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/8d9cb72682a0bbb29b7b673589be70cb095101cb.svg "Repobeats analytics image")
 
 ## 1、简介
 
@@ -48,6 +48,7 @@ qwz-sample
 │    ├─fsb-config 配置
 │    ├─fsb-date-format 数据格式化
 │    ├─fsb-logging 日志
+│    ├─fsb-listener 事件监听
 │ 
 ├─middleware 中间件
 ```
