@@ -68,7 +68,7 @@ public class Traversal {
     // Map
     public void map() {
 
-        Map<Integer, Object> maps = new HashMap<Integer, Object>();
+        Map<Integer, Object> maps = new HashMap<>();
         maps.put(1, "a");
         maps.put(2, "b");
         maps.put(3, "c");
