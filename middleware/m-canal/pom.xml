@@ -3,22 +3,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>qwz-sample</artifactId>
+        <artifactId>middleware</artifactId>
         <groupId>qinweizhao</groupId>
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>middleware</artifactId>
-    <packaging>pom</packaging>
-    <name>m---[middleware]</name>
-    <modules>
-        <module>m-canal</module>
-    </modules>
+    <artifactId>m-canal</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba.otter</groupId>
+            <artifactId>canal.client</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+    </dependencies>
 
 </project>
