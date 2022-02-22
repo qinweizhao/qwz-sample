@@ -22,7 +22,9 @@
     <modules>
         <module>fsb-config</module>
         <module>fsb-date-format</module>
+        <module>fsb-listener</module>
         <module>fsb-logging</module>
         <module>fsb-starter</module>
+        <module>fsb-util</module>
     </modules>
 </project>
