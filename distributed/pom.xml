@@ -27,6 +27,7 @@
 
     <modules>
         <module>d-nacos-discovery</module>
+        <module>d-nacos</module>
     </modules>
 
 
