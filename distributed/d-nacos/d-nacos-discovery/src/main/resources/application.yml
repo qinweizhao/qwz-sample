@@ -1,5 +1,5 @@
 spring:
-    profiles:
-        active: dev
+  profiles:
+    active: dev
 server:
-    port: 8090
+  port: 8090
