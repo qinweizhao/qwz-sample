@@ -8,10 +8,9 @@
         <version>1.0.0</version>
     </parent>
     <groupId>com.qinweizhao</groupId>
-    <artifactId>d-nacos</artifactId>
+    <artifactId>d-nacos-discovery</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>d-nacos-discovery</name>
-    <packaging>pom</packaging>
     <description>distributed-nacos-discovery</description>
     <properties>
         <java.version>1.8</java.version>
