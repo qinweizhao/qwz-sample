@@ -40,7 +40,9 @@ qwz-sample
 ├─concurrent 并发编程
 │
 ├─distributed 分布式
-│  ├─d-nacos-discovery 服务发现
+│  ├─d-nacos 注册中心&配置中心
+│    ├─dn-discovery 服务发现
+│    ├─dn-test 测试模块
 │
 ├─framework 应用框架
 │  ├─f-spring Spring
