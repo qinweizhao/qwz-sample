@@ -1,4 +1,4 @@
-package com.qinweizhao.discovery.config;
+package com.qinweizhao.test.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;

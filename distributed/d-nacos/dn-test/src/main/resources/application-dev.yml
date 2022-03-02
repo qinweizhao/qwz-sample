@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: test
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 42.192.49.72:8848
