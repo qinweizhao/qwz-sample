@@ -23,7 +23,7 @@
     </properties>
 
     <modules>
-        <module>d-nacos-discovery</module>
+        <module>dn-discovery</module>
     </modules>
 
 

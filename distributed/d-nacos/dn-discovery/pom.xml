@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>distributed</artifactId>
+        <artifactId>d-nacos</artifactId>
         <groupId>qinweizhao</groupId>
         <version>1.0.0</version>
     </parent>
     <groupId>com.qinweizhao</groupId>
-    <artifactId>d-nacos-discovery</artifactId>
+    <artifactId>dn-discovery</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>d-nacos-discovery</name>
     <description>distributed-nacos-discovery</description>
