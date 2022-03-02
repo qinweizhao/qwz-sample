@@ -16,7 +16,7 @@ import javax.annotation.Resource;
  * @author qinweizhao
  */
 @RestController
-@RequestMapping("/order")
+@RequestMapping("/discovery")
 public class Controller {
 
     @Resource
