@@ -5,9 +5,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
-
-import javax.annotation.Resource;
 
 /**
  * 控制层
@@ -17,9 +14,6 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/discovery")
 public class Controller {
-
-    @Resource
-    private RestTemplate restTemplate;
 
     /**
      * 通过主键查询单条数据
