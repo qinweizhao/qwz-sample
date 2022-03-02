@@ -8,16 +8,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import javax.annotation.Resource;
+
 /**
- * (tb_order)表控制层
+ * 控制层
  *
- * @author xxxxx
+ * @author qinweizhao
  */
 @RestController
 @RequestMapping("/order")
-public class UserController {
+public class Controller {
 
-    @Autowired
+    @Resource
     private RestTemplate restTemplate;
 
     /**
