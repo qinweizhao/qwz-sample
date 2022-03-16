@@ -1,0 +1,46 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: d-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: service
+          uri: http://localhost:9200/
+          predicates:
+            # 测试 Path
+            - Path=/service/**
+            # 时间
+#            - After=2021-02-23T14:20:00.000+08:00[Asia/Shanghai]
+            # Cookie
+#            - Cookie=loginname, weizhao
+            # 请求头
+#            - Header=X-Request-Id, \d+
+            # Host
+#            - Host=**.qinweizhao.com,**.qinweizhao.cn
+            # Method
+            - Method=GET,POST
+            # Query
+            - Query=username, abc.
+            # RemoteAddr
+            - RemoteAddr=192.168.10.1/0
+
+
+            # Weight 权重
+#        - id: service-a
+#            uri: http://localhost:9201/
+#            predicates:
+#              - Weight=group1, 8
+#        - id: service-b
+#            uri: http://localhost:9201/
+#            predicates:
+#              - Weight=group1, 2
+
+
+
+
+
+#          filters:
+#            - StripPrefix=1

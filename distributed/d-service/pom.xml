@@ -3,12 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.4</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <artifactId>distributed</artifactId>
+        <groupId>com.qinweizhao</groupId>
+        <version>1.0.0</version>
     </parent>
-    <groupId>com.qinweizhao</groupId>
     <artifactId>d-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>d-service</name>
@@ -22,11 +20,6 @@
         <spring-cloud.version>2020.0.1</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.1</spring-cloud-alibaba.version>
     </properties>
-
-    <modules>
-        <module>dn-discovery</module>
-    </modules>
-
 
     <!--这只是依赖管理，如果子项目需要用到依赖，只是省略了版本号而已，实际上还是要导依赖-->
     <dependencyManagement>
@@ -61,7 +54,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>

@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>d-nacos</artifactId>
-        <groupId>qinweizhao</groupId>
+        <groupId>com.qinweizhao</groupId>
         <version>1.0.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
