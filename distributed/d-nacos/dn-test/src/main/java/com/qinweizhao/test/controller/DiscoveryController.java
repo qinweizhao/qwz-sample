@@ -2,6 +2,7 @@ package com.qinweizhao.test.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -18,9 +19,9 @@ public class DiscoveryController {
     private RestTemplate restTemplate;
 
     @GetMapping("/{id}")
-    public String testDiscovery(){
+    public String testDiscovery(@PathVariable String id){
         ResponseEntity<String> forEntity = restTemplate.getForEntity("http://service/discovery/101", String.class);
-        return forEntity.getBody();
+        return forEntity.getBody()+id;
     }
 
 }
