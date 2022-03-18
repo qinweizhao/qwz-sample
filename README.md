@@ -40,10 +40,14 @@ qwz-sample
 ├─concurrent 并发编程
 │
 ├─distributed 分布式
+│  ├─d-gateway 网关
 │  ├─d-nacos 注册中心&配置中心
-│    ├─dn-discovery 服务发现
-│    ├─dn-test 测试模块
-│
+│    ├─dn-discovery 注册中心
+│    ├─dn-config 配置中心
+│    ├─dn-discovery-test 测试
+│    
+│  ├─d-service 测试服务
+│  
 ├─framework 应用框架
 │  ├─f-spring Spring
 │    ├─fs-config 配置
