@@ -1,4 +1,4 @@
-package com.qinweizhao.test;
+package com.qinweizhao.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

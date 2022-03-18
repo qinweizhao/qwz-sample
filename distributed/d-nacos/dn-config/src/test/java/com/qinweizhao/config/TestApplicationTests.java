@@ -1,4 +1,4 @@
-package com.qinweizhao.test;
+package com.qinweizhao.config;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

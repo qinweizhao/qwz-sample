@@ -1,6 +1,8 @@
+# Spring
 spring:
   application:
-    name: dn-discovery
+    # 应用名称
+    name: dn-discovery-test
   cloud:
     nacos:
       discovery:

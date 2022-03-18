@@ -2,7 +2,7 @@
 spring:
   application:
     # 应用名称
-    name: test
+    name: dn-config
   cloud:
     nacos:
       discovery:

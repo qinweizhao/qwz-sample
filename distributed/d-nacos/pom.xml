@@ -23,8 +23,9 @@
     </properties>
 
     <modules>
+        <module>dn-config</module>
         <module>dn-discovery</module>
-        <module>dn-test</module>
+        <module>dn-discovery-test</module>
     </modules>
 
 
