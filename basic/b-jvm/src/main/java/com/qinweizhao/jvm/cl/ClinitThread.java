@@ -1,4 +1,4 @@
-package com.qinweizhao.jvm.classloader;
+package com.qinweizhao.jvm.cl;
 
 /**
  * 虚拟机必须保证一个类的 clinit<>() 方法在多线程下被同步加锁。

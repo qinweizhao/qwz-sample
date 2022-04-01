@@ -1,4 +1,4 @@
-package com.qinweizhao.jvm.classloader;
+package com.qinweizhao.jvm.cl;
 
 /**
  * 初始化

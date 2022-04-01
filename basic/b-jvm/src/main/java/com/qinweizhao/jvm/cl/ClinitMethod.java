@@ -1,4 +1,4 @@
-package com.qinweizhao.jvm.classloader;
+package com.qinweizhao.jvm.cl;
 
 /**
  * 若有父类 ，jvm 会保证子类的 执行前，父类的 已经执行完毕

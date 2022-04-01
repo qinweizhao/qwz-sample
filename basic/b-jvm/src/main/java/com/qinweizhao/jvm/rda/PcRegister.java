@@ -1,4 +1,4 @@
-package com.qinweizhao.jvm.runtimedataareas;
+package com.qinweizhao.jvm.rda;
 
 /**
  * @author qinweizhao
