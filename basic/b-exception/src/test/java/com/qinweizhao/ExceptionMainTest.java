@@ -1,5 +1,6 @@
 package com.qinweizhao;
 
+import com.qinweizhao.exception.ExceptionMain;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;

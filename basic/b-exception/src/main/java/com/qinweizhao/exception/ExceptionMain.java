@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.exception;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -24,6 +24,16 @@ public class ExceptionMain {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            String s= null;
+            Response.BAD_LICENCE_TYPE.assertNotNull(s);
+        }catch (BusinessException e){
+            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 

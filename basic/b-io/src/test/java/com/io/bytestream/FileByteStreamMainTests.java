@@ -3,9 +3,6 @@ package com.io.bytestream;
 import com.io.FileByteStreamMain;
 import org.junit.jupiter.api.Test;
 
-import javax.servlet.http.HttpServletResponse;
-import java.io.*;
-
 /**
  * @author qinweizhao
  */
@@ -44,44 +41,44 @@ class FileByteStreamMainTests {
 
 
 
-    @Test
-    void pdf(HttpServletResponse response){
-        response.setContentType("application/pdf");
-        FileInputStream in = null;
-        OutputStream out;
-        BufferedInputStream bis = null;
-
-        //路径
-        String path = "/Users/weizhao/Data/spring.pdf";
-        File file = new File(path);
-        if (file.exists()) {
-            try {
-                in = new FileInputStream(file);
-                bis= new BufferedInputStream(in);
-                out = response.getOutputStream();
-                byte[] b = new byte[512];
-                while ((bis.read(b)) != -1) {
-                    out.write(b);
-                    out.flush();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }finally {
-                if (bis != null) {
-                    try {
-                        bis.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-                if (in != null) {
-                    try {
-                        in.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }
-    }
+//    @Test
+//    void pdf(HttpServletResponse response){
+//        response.setContentType("application/pdf");
+//        FileInputStream in = null;
+//        OutputStream out;
+//        BufferedInputStream bis = null;
+//
+//        //路径
+//        String path = "/Users/weizhao/Data/spring.pdf";
+//        File file = new File(path);
+//        if (file.exists()) {
+//            try {
+//                in = new FileInputStream(file);
+//                bis= new BufferedInputStream(in);
+//                out = response.getOutputStream();
+//                byte[] b = new byte[512];
+//                while ((bis.read(b)) != -1) {
+//                    out.write(b);
+//                    out.flush();
+//                }
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }finally {
+//                if (bis != null) {
+//                    try {
+//                        bis.close();
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//                if (in != null) {
+//                    try {
+//                        in.close();
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//        }
+//    }
 }
