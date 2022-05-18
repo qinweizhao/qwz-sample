@@ -3,6 +3,7 @@ package com.qinweizhao.redis.redis.service.impl;
 import com.qinweizhao.redis.redis.service.RedisLockService;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.Collections;
@@ -13,6 +14,7 @@ import java.util.concurrent.TimeUnit;
  * @author qinweizhao
  * @since 2022/5/17
  */
+@Service
 public class RedisLockServiceImpl implements RedisLockService {
 
 
@@ -57,8 +59,6 @@ public class RedisLockServiceImpl implements RedisLockService {
         // 加锁和设置过期时间一条命令执行 即原子操作
         Boolean lock = redisTemplate.opsForValue().setIfAbsent("lock", "111", 30, TimeUnit.SECONDS);
         if (Boolean.TRUE.equals(lock)) {
-            // 设置过期时间
-            // redisTemplate.expire("lock", 30, TimeUnit.SECONDS);
             // 加锁成功..执行业务
             Object dataFromDb = this.getDataFromDb();
             //删除锁
@@ -71,14 +71,13 @@ public class RedisLockServiceImpl implements RedisLockService {
     }
 
 
+    @Override
     public Object lock4() {
         String token = UUID.randomUUID().toString();
         // 加锁和设置过期时间一条命令执行 即原子操作
         // 占坑时使用 token
         Boolean lock = redisTemplate.opsForValue().setIfAbsent("lock", token, 30, TimeUnit.SECONDS);
         if (Boolean.TRUE.equals(lock)) {
-            // 设置过期时间
-            // redisTemplate.expire("lock", 30, TimeUnit.SECONDS);
             // 加锁成功..执行业务
             Object dataFromDb = this.getDataFromDb();
 
@@ -97,12 +96,13 @@ public class RedisLockServiceImpl implements RedisLockService {
         }
     }
 
+    @Override
     public Object lock5() {
         String token = UUID.randomUUID().toString();
         // 加锁+设置过期时间=原子操作
         Boolean lock = redisTemplate.opsForValue().setIfAbsent("lock", token, 30, TimeUnit.SECONDS);
         if (Boolean.TRUE.equals(lock)) {
-            Object dataFromDb = null;
+            Object dataFromDb;
             try {
                 // 加锁成功..执行业务
                 dataFromDb = this.getDataFromDb();
@@ -112,7 +112,7 @@ public class RedisLockServiceImpl implements RedisLockService {
                 // 获取值对比+对比成功删除=原子操作  lua脚本解锁
                 String script = "if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end";
                 //删除锁
-                redisTemplate.execute(new DefaultRedisScript<Long>(script, Long.class)
+                redisTemplate.execute(new DefaultRedisScript<>(script, Long.class)
                         , Collections.singletonList("lock"), token);
             }
             return dataFromDb;
