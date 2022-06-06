@@ -11,5 +11,6 @@
 
     <artifactId>f-spring-cloud</artifactId>
 
+    <name>fac</name>
 
 </project>
