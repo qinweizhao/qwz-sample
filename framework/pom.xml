@@ -21,6 +21,7 @@
     <modules>
         <module>f-spring</module>
         <module>f-spring-boot</module>
+        <module>f-spring-cloud</module>
     </modules>
 
 

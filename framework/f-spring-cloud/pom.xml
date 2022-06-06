@@ -9,17 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>f-spring-boot</artifactId>
+    <artifactId>f-spring-cloud</artifactId>
 
-    <packaging>pom</packaging>
-    <name>fsb</name>
 
-    <modules>
-        <module>fsb-config</module>
-        <module>fsb-date-format</module>
-        <module>fsb-listener</module>
-        <module>fsb-logging</module>
-        <module>fsb-starter</module>
-        <module>fsb-util</module>
-    </modules>
 </project>
