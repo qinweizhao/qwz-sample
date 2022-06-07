@@ -136,7 +136,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         endpoints
                 // 授权码模式所需要的 service
                 .authorizationCodeServices(authorizationCodeServices())
-                // 密码模式需要的 service
+                // 密码模式需要的认证管理器
                 .authenticationManager(authenticationManager)
                 // 令牌管理服务，必须存在
                 .tokenServices(tokenServices())
