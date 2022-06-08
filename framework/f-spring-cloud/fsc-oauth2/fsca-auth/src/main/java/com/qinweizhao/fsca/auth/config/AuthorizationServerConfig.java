@@ -1,5 +1,8 @@
 package com.qinweizhao.fsca.auth.config;
 
+import com.qinweizhao.fsca.auth.excepion.OAuthServerAuthenticationEntryPoint;
+import com.qinweizhao.fsca.auth.excepion.OAuthServerWebResponseExceptionTranslator;
+import com.qinweizhao.fsca.auth.filter.OAuthServerClientCredentialsTokenEndpointFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -16,7 +19,7 @@ import org.springframework.security.oauth2.provider.code.InMemoryAuthorizationCo
 import org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices;
 import org.springframework.security.oauth2.provider.token.DefaultTokenServices;
 import org.springframework.security.oauth2.provider.token.TokenStore;
-import org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore;
+import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 
 import javax.annotation.Resource;
 
@@ -28,6 +31,8 @@ import javax.annotation.Resource;
 @Configuration
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
+    @Resource
+    private OAuthServerAuthenticationEntryPoint authenticationEntryPoint;
 
     /**
      * 认证服务器安全配置（令牌访问的安全约束）
@@ -36,13 +41,18 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
      */
     @Override
     public void configure(AuthorizationServerSecurityConfigurer security) {
+        //自定义ClientCredentialsTokenEndpointFilter，用于处理客户端id，密码错误的异常
+        OAuthServerClientCredentialsTokenEndpointFilter endpointFilter = new OAuthServerClientCredentialsTokenEndpointFilter(security, authenticationEntryPoint);
+        endpointFilter.afterPropertiesSet();
+        security.addTokenEndpointAuthenticationFilter(endpointFilter);
+
         security
                 // 开启 /oauth/token_key 验证端口权限访问
                 .tokenKeyAccess("permitAll()")
                 // 开启 /oauth/check_token 验证端口权限访问
-                .checkTokenAccess("permitAll()")
-                // 表示支持 client_id 和 client_secret 做登陆认证
-                .allowFormAuthenticationForClients();
+                .checkTokenAccess("permitAll()");
+        // 表示支持 client_id 和 client_secret 做登陆认证 ,如果自定义了 OAuthServerClientCredentialsTokenEndpointFilter 则下面要注释掉
+        // .allowFormAuthenticationForClients();
     }
 
     /**
@@ -101,10 +111,9 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Resource
     private TokenStore tokenStore;
 
-    @Bean
-    TokenStore tokenStore() {
-        return new InMemoryTokenStore();
-    }
+    @Resource
+    private JwtAccessTokenConverter jwtAccessTokenConverter;
+
 
     /**
      * 令牌管理服务的配置
@@ -122,6 +131,9 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         services.setAccessTokenValiditySeconds(60 * 60 * 2);
         //refresh_token的过期时间
         services.setRefreshTokenValiditySeconds(60 * 60 * 24 * 3);
+
+        // * 令牌增强
+        services.setTokenEnhancer(jwtAccessTokenConverter);
         return services;
     }
 
@@ -134,6 +146,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
         endpoints
+                //设置异常WebResponseExceptionTranslator，用于处理用户名，密码错误、授权类型不正确的异常
+                .exceptionTranslator(new OAuthServerWebResponseExceptionTranslator())
                 // 授权码模式所需要的 service
                 .authorizationCodeServices(authorizationCodeServices())
                 // 密码模式需要的认证管理器
