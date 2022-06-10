@@ -35,5 +35,6 @@
         <module>b-jvm</module>
         <module>b-other</module>
         <module>b-generics</module>
+        <module>b-tool</module>
     </modules>
 </project>
