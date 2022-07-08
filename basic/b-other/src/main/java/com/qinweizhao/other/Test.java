@@ -6,5 +6,10 @@ package com.qinweizhao.other;
 public class Test {
 
 
+    private Test(){
+        System.out.println("Test构造方法");
+    }
+
+
 
 }
