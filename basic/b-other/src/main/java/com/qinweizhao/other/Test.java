@@ -6,8 +6,13 @@ package com.qinweizhao.other;
 public class Test {
 
 
-    private Test(){
-        System.out.println("Test构造方法");
+
+
+    public static void main(String[] args) {
+        int i=34;
+        int q=19/10;
+        System.out.println("q = " + q);
+
     }
 
 
