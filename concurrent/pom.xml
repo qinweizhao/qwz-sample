@@ -11,11 +11,12 @@
 
     <artifactId>concurrent</artifactId>
 
+    <packaging>pom</packaging>
+
     <name>c---[concurrent]</name>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <modules>
+        <module>c-collections</module>
+    </modules>
 
 </project>

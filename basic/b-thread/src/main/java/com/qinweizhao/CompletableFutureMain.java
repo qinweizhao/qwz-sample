@@ -1,4 +1,4 @@
-package com.qinweizhao.concurrent.future;
+package com.qinweizhao;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
