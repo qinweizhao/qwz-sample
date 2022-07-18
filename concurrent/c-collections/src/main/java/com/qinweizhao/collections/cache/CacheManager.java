@@ -107,7 +107,7 @@ public class CacheManager {
     /**
      * 根据key删除信息
      *
-     * @param cacheName
+     * @param cacheName cacheName
      */
     public static void removeCache(String cacheName) {
 
