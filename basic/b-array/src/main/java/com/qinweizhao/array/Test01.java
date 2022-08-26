@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.array;
 
 public class Test01 {
 

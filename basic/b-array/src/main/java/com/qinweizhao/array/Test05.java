@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.array;
 
 /**
  * 使用javabean和数组存储表格的信息。
