@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.other;
 
 import java.util.Calendar;
 import java.util.Date;

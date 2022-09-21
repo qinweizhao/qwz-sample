@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.other;
 
 /**
  * 测试String和StringBuilder在频繁修改字符串时的效率问题

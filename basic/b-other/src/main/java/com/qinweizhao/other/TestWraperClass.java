@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.other;
 
 public class TestWraperClass {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.other;
 
 /**
  * 定义一个简单的包装类，并不难！！！

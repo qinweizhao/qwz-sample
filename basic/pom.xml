@@ -30,7 +30,6 @@
         <module>b-socket</module>
         <module>b-reflect</module>
         <module>b-data-structure</module>
-        <module>b-class</module>
         <module>b-array</module>
         <module>b-jvm</module>
         <module>b-other</module>

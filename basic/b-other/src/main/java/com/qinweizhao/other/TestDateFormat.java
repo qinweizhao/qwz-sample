@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.other;
 
 import java.text.DateFormat;
 import java.text.ParseException;

@@ -17,7 +17,7 @@ public class FastGenerator {
     public static void main(String[] args) {
         // String property = System.getProperty("user.dir");
         String property = "";
-        FastAutoGenerator.create("jdbc:mysql://127.0.0.1:3306/qwz-blog?serverTimezone=UTC", "root", "Qwz#1201")
+        FastAutoGenerator.create("jdbc:mysql://127.0.0.1:3306/new_mall_all?serverTimezone=UTC", "root", "Qwz#1201")
                 .globalConfig(builder -> {
                     // 设置作者
                     builder.author("qinweizhao")
@@ -32,7 +32,7 @@ public class FastGenerator {
                         // 设置父包名
                         .parent("com.qinweizhao")
                         // 设置父包模块名
-                        .moduleName("blog")
+                        .moduleName("product")
                         // 设置mapperXml生成路径
                         .pathInfo(Collections.singletonMap(OutputFile.mapperXml, property + "/Users/weizhao/Code/generator/src/main/resources/mapper")))
                 .strategyConfig(builder -> {
@@ -51,6 +51,7 @@ public class FastGenerator {
                             // 启用 BaseColumnList
                             .enableBaseColumnList()
                             .serviceBuilder()
+                            .entityBuilder().enableLombok()
                     // 设置需要生成的表名
                     //.addTablePrefix("sys_")
                     ; // 设置过滤表前缀
