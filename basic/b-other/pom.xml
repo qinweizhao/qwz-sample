@@ -28,7 +28,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <!-- 此处为主入口-->
-                            <mainClass>com.qinweizhao.test.TestMain</mainClass>
+                            <mainClass>com.qinweizhao.test.Test</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
