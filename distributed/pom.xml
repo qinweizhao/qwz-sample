@@ -16,6 +16,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>d-elasticjob</module>
         <module>d-nacos</module>
         <module>d-gateway</module>
         <module>d-service</module>
