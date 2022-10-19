@@ -3,6 +3,7 @@ package com.qinweizhao.elasticjob.lite;
 
 import com.qinweizhao.elasticjob.lite.job.MyJob;
 import org.apache.shardingsphere.elasticjob.api.JobConfiguration;
+import org.apache.shardingsphere.elasticjob.http.props.HttpJobProperties;
 import org.apache.shardingsphere.elasticjob.lite.api.bootstrap.impl.OneOffJobBootstrap;
 import org.apache.shardingsphere.elasticjob.lite.api.bootstrap.impl.ScheduleJobBootstrap;
 import org.apache.shardingsphere.elasticjob.reg.base.CoordinatorRegistryCenter;
@@ -14,14 +15,21 @@ public class ElasticJobLiteMain {
     public static void main(String[] args) {
 
         // 定时调度
-        schedule();
+//        schedule();
 
         // 一次行调度
         oneOff();
     }
 
     private static void oneOff() {
-        OneOffJobBootstrap jobBootstrap = new OneOffJobBootstrap(createRegistryCenter(), new MyJob(), createJobConfiguration());
+        OneOffJobBootstrap jobBootstrap = new OneOffJobBootstrap(createRegistryCenter(), "HTTP", JobConfiguration.newBuilder(
+                        "javaHttpJob", 1)
+                .setProperty(HttpJobProperties.URI_KEY, "http://www.qinweizhao.com")
+                .setProperty(HttpJobProperties.METHOD_KEY, "GET")
+                .setProperty(HttpJobProperties.DATA_KEY, "source=ejob")
+                .shardingItemParameters("0=Beijing").
+                build());
+
         // 可多次调用一次性调度
         jobBootstrap.execute();
         jobBootstrap.execute();
