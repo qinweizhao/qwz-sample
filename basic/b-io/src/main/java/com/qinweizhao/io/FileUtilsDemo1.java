@@ -6,7 +6,7 @@ import java.io.File;
 
 /**
  * @author qinweizhao
- * @since 2021/11/26
+ * @since 2021-11-26
  */
 public class FileUtilsDemo1 {
     public static void main(String[] args) throws Exception {

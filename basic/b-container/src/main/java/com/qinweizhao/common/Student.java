@@ -2,7 +2,7 @@ package com.qinweizhao.common;
 
 /**
  * @author qinweizhao
- * @since 2021/11/26
+ * @since 2021-11-26
  */
 public class Student {
     private String name;

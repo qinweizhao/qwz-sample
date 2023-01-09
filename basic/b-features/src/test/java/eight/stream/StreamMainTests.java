@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  * @author qinweizhao
- * @since 2021/11/18
+ * @since 2021-11-18
  */
 
 class StreamMainTests {

@@ -6,7 +6,7 @@ import java.util.Comparator;
 
 /**
  * @author qinweizhao
- * @since 2021/11/26
+ * @since 2021-11-26
  */
 public class StudentComparatorMain implements Comparator<Student> {
 

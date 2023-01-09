@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 
 /**
  * @author qinweizhao
- * @since 2021/11/26
+ * @since 2021-11-26
  */
 public class DataOutputDemo {
     public static void main(String[] args) {

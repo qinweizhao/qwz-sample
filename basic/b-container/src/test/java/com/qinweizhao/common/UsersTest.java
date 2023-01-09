@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  * @author qinweizhao
- * @since 2021/11/26
+ * @since 2021-11-26
  */
 class UsersTest {
 

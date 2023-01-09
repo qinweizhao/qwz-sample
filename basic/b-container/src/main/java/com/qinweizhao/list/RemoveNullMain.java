@@ -8,7 +8,7 @@ import java.util.List;
  * list 集合去除 null
  *
  * @author qinweizhao
- * @since 2021/11/18
+ * @since 2021-11-18
  */
 public class RemoveNullMain {
 

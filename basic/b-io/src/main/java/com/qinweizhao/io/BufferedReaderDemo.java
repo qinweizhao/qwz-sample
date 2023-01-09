@@ -5,7 +5,7 @@ import java.io.FileReader;
 
 /**
  * @author qinweizhao
- * @since 2021/11/26
+ * @since 2021-11-26
  */
 public class BufferedReaderDemo {
     public static void main(String[] args) {

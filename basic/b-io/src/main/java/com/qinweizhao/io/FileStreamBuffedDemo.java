@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 
 /**
  * @author qinweizhao
- * @since 2021/11/26
+ * @since 2021-11-26
  */
 public class FileStreamBuffedDemo {
     public static void main(String[] args) {

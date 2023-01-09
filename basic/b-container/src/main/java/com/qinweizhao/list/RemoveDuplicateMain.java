@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 /**
  * @author qinweizhao
- * @since 2021/11/21
+ * @since 2021-11-21
  */
 public class RemoveDuplicateMain {
 

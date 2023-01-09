@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @author qinweizhao
- * @since 2021/11/26
+ * @since 2021-11-26
  */
 class ArrayListMainTest {
 

@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @author qinweizhao
- * @since 2021/11/21
+ * @since 2021-11-21
  */
 class RemoveDuplicateTests {
 

@@ -9,7 +9,7 @@ import java.util.List;
  * 移除 list 中的 null
  *
  * @author qinweizhao
- * @since 2021/11/18
+ * @since 2021-11-18
  */
 class RemoveNullMainTests {
 
