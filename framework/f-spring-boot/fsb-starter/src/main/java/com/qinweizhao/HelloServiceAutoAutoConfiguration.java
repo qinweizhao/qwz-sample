@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @author qinweizhao
- * @since 2021/11/29
+ * @since 2021-11-29
  */
 @Configuration
 @EnableConfigurationProperties(HelloProperties.class)

@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  * @author qinweizhao
- * @since 2021/11/20
+ * @since 2021-11-20
  */
 @RestController
 public class UserController {

@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 /**
  * @author qinweizhao
- * @since 2022/2/21
+ * @since 2022-02-21
  */
 public class CopyMain {
 

@@ -2,7 +2,7 @@ package com.qinweizhao.exception;
 
 /**
  * @author qinweizhao
- * @since 2022-4-13
+ * @since 2022-04-13
  */
 public class BusinessException extends  BaseException{
     private static final long serialVersionUID = 1L;

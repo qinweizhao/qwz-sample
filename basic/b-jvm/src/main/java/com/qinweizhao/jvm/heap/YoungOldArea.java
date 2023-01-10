@@ -5,7 +5,7 @@ package com.qinweizhao.jvm.heap;
  * -Xms60m -Xmx60m -XX:NewRatio=2 -XX:SurvivorRatio=8 -XX:+PrintGCDetails
  *
  * @author qinweizhao
- * @since 2022/4/3
+ * @since 2022-04-03
  */
 public class YoungOldArea {
 

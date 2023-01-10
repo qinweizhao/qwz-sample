@@ -2,7 +2,7 @@ package com.qinweizhao.redis.redis.service;
 
 /**
  * @author qinweizhao
- * @since 2022/5/17
+ * @since 2022-05-17
  */
 public interface RedisLockService {
 

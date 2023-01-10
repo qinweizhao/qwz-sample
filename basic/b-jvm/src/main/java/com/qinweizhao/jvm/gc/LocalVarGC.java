@@ -4,7 +4,7 @@ package com.qinweizhao.jvm.gc;
  * -XX:+PrintGCDetails
  * -Xms256m -Xmx256m -XX:+PrintGCDetails -XX:PretenureSizeThreshold=15m
  * @author qinweizhao
- * @since 2022/4/4
+ * @since 2022-04-04
  */
 public class LocalVarGC {
     public void localvarGC1() {

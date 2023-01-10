@@ -6,7 +6,7 @@ import java.io.File;
 
 /**
  * @author qinweizhao
- * @since 2022/8/26
+ * @since 2022-08-26
  */
 public class FileTest {
 

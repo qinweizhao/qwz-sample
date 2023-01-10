@@ -8,7 +8,7 @@ import javax.annotation.Resource;
 
 /**
  * @author qinweizhao
- * @since 2022/5/17
+ * @since 2022-05-17
  */
 @RestController
 public class RedisLockController {

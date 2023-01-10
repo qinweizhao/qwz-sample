@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author qinweizhao
- * @since 2022/3/15
+ * @since 2022-03-15
  */
 @RestController
 @RequestMapping("/service")

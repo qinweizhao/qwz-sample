@@ -2,7 +2,7 @@ package com.qinweizhao.jvm.ma;
 
 /**
  * @author qinweizhao
- * @since 2022/4/3
+ * @since 2022-04-03
  */
 public class MethodArea {
 

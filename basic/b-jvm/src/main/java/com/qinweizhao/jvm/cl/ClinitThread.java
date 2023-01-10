@@ -3,7 +3,7 @@ package com.qinweizhao.jvm.cl;
 /**
  * 虚拟机必须保证一个类的 clinit<>() 方法在多线程下被同步加锁。
  * @author qinweizhao
- * @since 2021/12/17
+ * @since 2021-12-17
  */
 public class ClinitThread {
 

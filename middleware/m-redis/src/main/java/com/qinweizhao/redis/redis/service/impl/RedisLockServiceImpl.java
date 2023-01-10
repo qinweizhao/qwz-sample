@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author qinweizhao
- * @since 2022/5/17
+ * @since 2022-05-17
  */
 @Service
 public class RedisLockServiceImpl implements RedisLockService {

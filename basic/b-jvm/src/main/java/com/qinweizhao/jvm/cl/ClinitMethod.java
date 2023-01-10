@@ -3,7 +3,7 @@ package com.qinweizhao.jvm.cl;
 /**
  * 若有父类 ，jvm 会保证子类的 执行前，父类的 已经执行完毕
  * @author qinweizhao
- * @since 2021/12/17
+ * @since 2021-12-17
  */
 public class ClinitMethod {
     static class Father {

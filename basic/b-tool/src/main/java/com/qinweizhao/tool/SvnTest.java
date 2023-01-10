@@ -12,7 +12,7 @@ import org.tmatesoft.svn.core.wc.SVNWCUtil;
 
 /**
  * @author qinweizhao
- * @since 2022/6/10
+ * @since 2022-06-10
  */
 public class SvnTest {
 

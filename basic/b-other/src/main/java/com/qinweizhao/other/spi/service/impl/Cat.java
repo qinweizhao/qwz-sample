@@ -4,7 +4,7 @@ import com.qinweizhao.other.spi.service.Animal;
 
 /**
  * @author qinweizhao
- * @since 2022/10/19
+ * @since 2022-10-19
  */
 public class Cat implements Animal {
 

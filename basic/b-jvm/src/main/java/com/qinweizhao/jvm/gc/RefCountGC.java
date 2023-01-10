@@ -5,7 +5,7 @@ package com.qinweizhao.jvm.gc;
  * VM参数：-XX:+PrintGCDetails
  *
  * @author qinweizhao
- * @since 2022/4/4
+ * @since 2022-04-04
  */
 public class RefCountGC {
 

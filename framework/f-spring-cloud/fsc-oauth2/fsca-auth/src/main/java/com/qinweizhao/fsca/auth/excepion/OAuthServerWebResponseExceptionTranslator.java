@@ -10,7 +10,7 @@ import org.springframework.security.oauth2.provider.error.WebResponseExceptionTr
 
 /**
  * @author qinweizhao
- * @since 2022/6/7
+ * @since 2022-06-07
  */
 public class OAuthServerWebResponseExceptionTranslator implements WebResponseExceptionTranslator {
     /**

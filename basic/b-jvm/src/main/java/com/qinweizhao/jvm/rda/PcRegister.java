@@ -4,7 +4,7 @@ import com.qinweizhao.jvm.ma.MethodInnerStructure;
 
 /**
  * @author qinweizhao
- * @since 2022/3/31
+ * @since 2022-03-31
  */
 public class PcRegister {
     public static void main(String[] args) {

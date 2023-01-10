@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 局部变量表
  * @author qinweizhao
- * @since 2022/4/1
+ * @since 2022-04-01
  */
 public class LocalVariables {
     private int count = 0;

@@ -7,7 +7,7 @@ package com.qinweizhao.jvm.cl;
  * 指令按语句在源文件中出现的顺序执行
  *
  * @author qinweizhao
- * @since 2021/12/17
+ * @since 2021-12-17
  */
 public class ClassInit {
 

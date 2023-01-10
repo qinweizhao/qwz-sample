@@ -4,7 +4,7 @@ package com.qinweizhao.jvm.jni;
  * 本地方法
  * 标识符 native 可以与其他所有的 Java 标识符连用，但是 abstract 除外。
  * @author qinweizhao
- * @since 2022/4/1
+ * @since 2022-04-01
  */
 public  class IHaveNatives {
 

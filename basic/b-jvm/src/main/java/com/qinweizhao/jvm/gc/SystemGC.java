@@ -2,7 +2,7 @@ package com.qinweizhao.jvm.gc;
 
 /**
  * @author qinweizhao
- * @since 2022/4/4
+ * @since 2022-04-04
  */
 public class SystemGC {
     public static void main(String[] args) {

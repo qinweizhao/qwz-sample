@@ -17,7 +17,7 @@ package com.qinweizhao.jvm.heap;
  * 4. 查看设置的参数：方式一： jps   /  jstat -gc 进程id
  *                  方式二：-XX:+PrintGCDetails
  * @author qinweizhao
- * @since 2022/4/3
+ * @since 2022-04-03
  */
 public class HeapSpaceInitial {
     public static void main(String[] args) {
