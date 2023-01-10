@@ -15,6 +15,7 @@ class ConfigApplicationTests {
     void contextLoads() {
 
     }
+
     /**
      * 配置文件值注入( @ConfigurationProperties 方式)
      */

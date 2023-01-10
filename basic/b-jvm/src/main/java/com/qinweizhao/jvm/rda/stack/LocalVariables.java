@@ -4,11 +4,17 @@ import java.util.Date;
 
 /**
  * 局部变量表
+ *
  * @author qinweizhao
  * @since 2022-04-01
  */
 public class LocalVariables {
     private int count = 0;
+
+    //关于Slot的使用的理解
+    public LocalVariables() {
+        this.count = 1;
+    }
 
     public static void main(String[] args) {
         LocalVariables test = new LocalVariables();
@@ -16,19 +22,13 @@ public class LocalVariables {
         test.test1();
     }
 
-
-    public static void testStatic(){
+    public static void testStatic() {
         LocalVariables test = new LocalVariables();
         Date date = new Date();
         int count = 10;
         System.out.println(count);
         // 因为 this 变量不存在于当前方法的局部变量表中！！!
         // System.out.println(this.count);
-    }
-
-    //关于Slot的使用的理解
-    public LocalVariables(){
-        this.count = 1;
     }
 
     public void test1() {

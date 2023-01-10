@@ -3,8 +3,6 @@ package com.qinweizhao.util.problem.copy;
 import org.springframework.beans.BeanUtils;
 import org.springframework.cglib.beans.BeanCopier;
 
-import java.util.Arrays;
-
 /**
  * @author qinweizhao
  * @since 2022-02-21
@@ -17,7 +15,6 @@ public class CopyMain {
         // first.setIds(Arrays.asList(1, 2, 3));
         return first;
     }
-
 
 
     public void beanUtils() {
@@ -44,8 +41,6 @@ public class CopyMain {
             System.out.println(each);
         }
     }
-
-
 
 
     public void mapstruct() {

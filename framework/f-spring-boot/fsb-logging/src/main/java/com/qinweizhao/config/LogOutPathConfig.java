@@ -6,7 +6,7 @@ import java.io.File;
 
 /**
  * @author qinweizhao
- * @since 2021/9/7
+ * @since 2021-09-07
  */
 public class LogOutPathConfig extends PropertyDefinerBase {
     @Override

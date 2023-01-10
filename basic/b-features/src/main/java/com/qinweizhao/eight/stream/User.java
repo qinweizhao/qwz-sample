@@ -26,7 +26,7 @@ public class User {
     private String area;
 
     public User(Integer age, String username, String sex, String area) {
-        this.age=age;
+        this.age = age;
         this.username = username;
         this.area = area;
         this.sex = sex;

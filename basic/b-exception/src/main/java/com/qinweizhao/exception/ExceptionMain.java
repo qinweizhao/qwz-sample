@@ -29,9 +29,9 @@ public class ExceptionMain {
 
     public static void main(String[] args) {
         try {
-            String s= null;
+            String s = null;
             Response.BAD_LICENCE_TYPE.assertNotNull(s);
-        }catch (BusinessException e){
+        } catch (BusinessException e) {
             e.printStackTrace();
             System.out.println(e.getMessage());
         }

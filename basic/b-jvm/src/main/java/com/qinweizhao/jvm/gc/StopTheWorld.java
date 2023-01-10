@@ -8,6 +8,13 @@ import java.util.List;
  * @since 2022-04-04
  */
 public class StopTheWorld {
+    public static void main(String[] args) {
+        WorkThread w = new WorkThread();
+        PrintThread p = new PrintThread();
+        w.start();
+        p.start();
+    }
+
     public static class WorkThread extends Thread {
         List<byte[]> list = new ArrayList<byte[]>();
 
@@ -48,12 +55,5 @@ public class StopTheWorld {
                 ex.printStackTrace();
             }
         }
-    }
-
-    public static void main(String[] args) {
-        WorkThread w = new WorkThread();
-        PrintThread p = new PrintThread();
-        w.start();
-        p.start();
     }
 }

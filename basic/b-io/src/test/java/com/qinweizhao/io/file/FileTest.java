@@ -14,7 +14,7 @@ public class FileTest {
      * 删除文件
      */
     @Test
-    void deleteFile(){
+    void deleteFile() {
         String pathName = "/Users/weizhao/Code/qwz/qwz-sample/basic/b-io/src/main/resources/del.txt";
         File file = new File(pathName);
         file.deleteOnExit();

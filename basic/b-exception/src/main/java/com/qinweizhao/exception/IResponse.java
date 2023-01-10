@@ -6,5 +6,6 @@ package com.qinweizhao.exception;
  */
 public interface IResponse {
     int getCode();
+
     String getMessage();
 }

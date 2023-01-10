@@ -11,8 +11,17 @@ public class Test {
     private String name;
     private Integer age;
 
+    public Test(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
@@ -21,11 +30,6 @@ public class Test {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
-    }
-
-    public Test(String name, Integer age) {
-        this.name = name;
-        this.age = age;
     }
 
     @Override
@@ -39,10 +43,6 @@ public class Test {
     @Override
     public int hashCode() {
         return Objects.hash(name, age);
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public Integer getAge() {

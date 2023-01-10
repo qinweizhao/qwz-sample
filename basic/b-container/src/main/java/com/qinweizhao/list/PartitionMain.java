@@ -20,7 +20,7 @@ public class PartitionMain {
         List<List<String>> rsList = Lists.partition(list, 10);
         int i = 0;
         for (List<String> obj : rsList) {
-            System.out.println("obj"+obj);
+            System.out.println("obj" + obj);
         }
     }
 }

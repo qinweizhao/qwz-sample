@@ -123,8 +123,6 @@ public class RedisLockServiceImpl implements RedisLockService {
     }
 
 
-
-
     /**
      * 模拟从数据库中获取数据
      *

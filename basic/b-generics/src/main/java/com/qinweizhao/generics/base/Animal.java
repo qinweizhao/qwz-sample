@@ -7,13 +7,13 @@ import lombok.Data;
  * @since 2021-12-29
  */
 @Data
-public abstract class Animal
-{
+public abstract class Animal {
     private Integer leg;
 
     /**
      * 动物有几条退
+     *
      * @return int
      */
-    public abstract int countLegs() ;
+    public abstract int countLegs();
 }

@@ -17,7 +17,7 @@ public class OAuthServerWebResponseExceptionTranslator implements WebResponseExc
      * 业务处理方法，重写这个方法返回客户端信息
      */
     @Override
-    public ResponseEntity<Result> translate(Exception e){
+    public ResponseEntity<Result> translate(Exception e) {
         Result resultMsg = doTranslateHandler(e);
         return new ResponseEntity<Result>(resultMsg, HttpStatus.UNAUTHORIZED);
     }
@@ -30,13 +30,13 @@ public class OAuthServerWebResponseExceptionTranslator implements WebResponseExc
         //初始值，系统错误，
         ResultCode resultCode = ResultCode.UNAUTHORIZED;
         //判断异常，不支持的认证方式
-        if(e instanceof UnsupportedGrantTypeException){
+        if (e instanceof UnsupportedGrantTypeException) {
             //不支持的授权类型异常
             resultCode = ResultCode.UNSUPPORTED_GRANT_TYPE;
-        }else if(e instanceof InvalidGrantException){
+        } else if (e instanceof InvalidGrantException) {
             //用户名或密码异常
             resultCode = ResultCode.USERNAME_OR_PASSWORD_ERROR;
         }
-        return new Result(resultCode.getCode(),resultCode.getMsg(),null);
+        return new Result(resultCode.getCode(), resultCode.getMsg(), null);
     }
 }

@@ -19,8 +19,8 @@ public class HelloServiceAutoAutoConfiguration {
     HelloProperties helloProperties;
 
     @Bean
-    HelloService helloService(){
-        HelloService helloService =new HelloService();
+    HelloService helloService() {
+        HelloService helloService = new HelloService();
         helloService.setAge(helloProperties.getAge());
         helloService.setName(helloProperties.getName());
         return helloService;

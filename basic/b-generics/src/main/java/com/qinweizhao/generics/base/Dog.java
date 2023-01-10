@@ -9,7 +9,7 @@ import lombok.EqualsAndHashCode;
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class Dog extends Animal{
+public class Dog extends Animal {
 
 
     @Override

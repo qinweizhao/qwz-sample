@@ -15,7 +15,7 @@ public class ServiceController {
 
 
     @GetMapping("/a")
-    public String a(){
+    public String a() {
         return "这是 Service 服务返回的信息";
     }
 }

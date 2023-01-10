@@ -228,9 +228,9 @@ public class StreamMain {
      */
     public static void joining() {
         List<User> list = new ArrayList<>();
-        list.add(new User("qin","male", "New York"));
-        list.add(new User("wei","male", "Washington"));
-        list.add(new User("zhao","female", "Washington"));
+        list.add(new User("qin", "male", "New York"));
+        list.add(new User("wei", "male", "Washington"));
+        list.add(new User("zhao", "female", "Washington"));
         String names = list.stream().map(User::getUsername).collect(Collectors.joining(","));
 
         System.out.println("所有的姓名：" + names);
@@ -241,11 +241,11 @@ public class StreamMain {
      * sorted()：自然排序，流中元素需实现Comparable接口
      * sorted(Comparator com)：Comparator排序器自定义排序
      */
-    public static void sorted(){
+    public static void sorted() {
         List<User> list = new ArrayList<>();
-        list.add(new User(20,"qin","male", "New York"));
-        list.add(new User(21,"wei","male", "Washington"));
-        list.add(new User(22,"zhao","female", "Washington"));
+        list.add(new User(20, "qin", "male", "New York"));
+        list.add(new User(21, "wei", "male", "Washington"));
+        list.add(new User(22, "zhao", "female", "Washington"));
         // 按年龄升序排序（自然排序）
         java.util.stream.Stream<String> sorted = list.stream().sorted(Comparator.comparing(User::getAge)).map(User::getUsername);
         // 按年龄倒序排序

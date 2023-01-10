@@ -13,7 +13,8 @@ public interface Converter {
     Converter INSTANCE = Mappers.getMapper(Converter.class);
 
     /**
-     *  A 转为 B
+     * A 转为 B
+     *
      * @param a a
      * @return B
      */

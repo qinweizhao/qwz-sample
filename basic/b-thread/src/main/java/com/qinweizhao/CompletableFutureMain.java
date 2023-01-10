@@ -44,8 +44,6 @@ public class CompletableFutureMain {
 //        }, executor);
 
 
-
-
         /**
          * 两个都完成
          */
@@ -101,12 +99,12 @@ public class CompletableFutureMain {
         CompletableFuture<String> futureImg = CompletableFuture.supplyAsync(() -> {
             System.out.println("查询商品的图片信息");
             return "hello.jpg";
-        },executor);
+        }, executor);
 
         CompletableFuture<String> futureAttr = CompletableFuture.supplyAsync(() -> {
             System.out.println("查询商品的属性");
             return "黑色+256G";
-        },executor);
+        }, executor);
 
         CompletableFuture<String> futureDesc = CompletableFuture.supplyAsync(() -> {
             try {
@@ -116,25 +114,24 @@ public class CompletableFutureMain {
                 e.printStackTrace();
             }
             return "华为";
-        },executor);
+        }, executor);
 
 //        CompletableFuture<Void> allOf = CompletableFuture.allOf(futureImg, futureAttr, futureDesc);
         CompletableFuture<Object> anyOf = CompletableFuture.anyOf(futureImg, futureAttr, futureDesc);
         anyOf.get();//等待所有结果完成
 
 //        System.out.println("main....end...."+futureImg.get()+"=>"+futureAttr.get()+"=>"+futureDesc.get());
-        System.out.println("main....end...."+anyOf.get());
-
-
+        System.out.println("main....end...." + anyOf.get());
 
 
     }
 
-    public static void createSyncNoReturn(){
+    public static void createSyncNoReturn() {
         CompletableFuture<Void> voidCompletableFuture = CompletableFuture.runAsync(() -> {
             System.out.println("当前线程：" + Thread.currentThread().getId());
         }, executor);
     }
+
     public static Long createSyncHasReturn() throws ExecutionException, InterruptedException {
         CompletableFuture<Long> longCompletableFuture = CompletableFuture.supplyAsync(() -> {
             System.out.println("当前线程：" + Thread.currentThread().getId());
@@ -144,14 +141,14 @@ public class CompletableFutureMain {
         return longCompletableFuture.get();
     }
 
-    public static void whenComplete(){
+    public static void whenComplete() {
         CompletableFuture<Long> longCompletableFuture1 = CompletableFuture.supplyAsync(() -> {
             System.out.println("当前线程：" + Thread.currentThread().getId());
             return Thread.currentThread().getId();
         }, executor).whenComplete((response, exception) -> {
             System.out.println("运行结果：" + response);
             System.out.println("异常：" + exception);
-        }).exceptionally(exception-> 10L);
+        }).exceptionally(exception -> 10L);
     }
 
 }

@@ -24,16 +24,16 @@ public class SvnTest {
         SVNRepositoryFactoryImpl.setup();
         //file:///
         FSRepositoryFactory.setup();
-        String url="http://10.200.47.151/svn/javaprojects/";
-        String name="qinweizh1ao";
-        String password="qinweizhao";
+        String url = "http://10.200.47.151/svn/javaprojects/";
+        String name = "qinweizh1ao";
+        String password = "qinweizhao";
         SVNRepository repository = null;
         try {
             repository = SVNRepositoryFactory.create(SVNURL.parseURIEncoded(url));
             ISVNAuthenticationManager authManager =
                     SVNWCUtil.createDefaultAuthenticationManager(name, password.toCharArray());
             repository.setAuthenticationManager(authManager);
-        } catch (SVNException e){
+        } catch (SVNException e) {
             e.printStackTrace();
             System.exit(1);
         }

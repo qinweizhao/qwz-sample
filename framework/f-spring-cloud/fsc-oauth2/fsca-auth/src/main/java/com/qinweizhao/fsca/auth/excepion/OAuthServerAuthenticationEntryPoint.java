@@ -15,6 +15,7 @@ import java.io.IOException;
 
 /**
  * 用于处理客户端想认证出错，包括客户端id、密码错误
+ *
  * @author weizhao
  */
 @Component
@@ -27,6 +28,6 @@ public class OAuthServerAuthenticationEntryPoint implements AuthenticationEntryP
      */
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException {
-        ResponseUtils.result(response,new Result(ResultCode.CLIENT_AUTHENTICATION_FAILED.getCode(),ResultCode.CLIENT_AUTHENTICATION_FAILED.getMsg(),null));
+        ResponseUtils.result(response, new Result(ResultCode.CLIENT_AUTHENTICATION_FAILED.getCode(), ResultCode.CLIENT_AUTHENTICATION_FAILED.getMsg(), null));
     }
 }

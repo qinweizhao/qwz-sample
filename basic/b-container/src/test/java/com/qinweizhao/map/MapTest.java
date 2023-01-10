@@ -12,16 +12,16 @@ import java.util.Map;
 class MapTest {
 
     @Test
-    void test1(){
-        Map<String ,String > map = new HashMap<>();
+    void test1() {
+        Map<String, String> map = new HashMap<>();
 
-        map.put("a","this-is-a");
+        map.put("a", "this-is-a");
         String a = map.get("a");
 
         System.out.println(a);
 
         String replace = a.replace("-", "");
-        map.put("a",replace);
+        map.put("a", replace);
 
         System.out.println(map);
         System.out.println(a);

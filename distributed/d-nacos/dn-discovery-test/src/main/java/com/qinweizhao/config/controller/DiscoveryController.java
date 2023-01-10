@@ -16,19 +16,19 @@ import javax.annotation.Resource;
 @RestController
 public class DiscoveryController {
 
+    @Resource
+    private RestTemplate restTemplate;
+
     @LoadBalanced
     @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
 
-    @Resource
-    private RestTemplate restTemplate;
-
     @GetMapping("/{id}")
-    public String testDiscovery(@PathVariable String id){
-        ResponseEntity<String> forEntity = restTemplate.getForEntity("http://dn-discovery/discovery/"+id, String.class);
-        return forEntity.getBody()+id;
+    public String testDiscovery(@PathVariable String id) {
+        ResponseEntity<String> forEntity = restTemplate.getForEntity("http://dn-discovery/discovery/" + id, String.class);
+        return forEntity.getBody() + id;
     }
 
 }

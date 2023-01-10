@@ -11,20 +11,6 @@ public class CanReliveObject {
      */
     public static CanReliveObject obj;
 
-
-    /**
-     * 此方法只能被调用一次
-     * @throws Throwable t
-     */
-    @Override
-    protected void finalize() throws Throwable {
-        super.finalize();
-        System.out.println("调用当前类重写的finalize()方法");
-        //当前待回收的对象在finalize()方法中与引用链上的一个对象obj建立了联系
-        obj = this;
-    }
-
-
     public static void main(String[] args) {
         try {
             obj = new CanReliveObject();
@@ -53,5 +39,18 @@ public class CanReliveObject {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * 此方法只能被调用一次
+     *
+     * @throws Throwable t
+     */
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+        System.out.println("调用当前类重写的finalize()方法");
+        //当前待回收的对象在finalize()方法中与引用链上的一个对象obj建立了联系
+        obj = this;
     }
 }

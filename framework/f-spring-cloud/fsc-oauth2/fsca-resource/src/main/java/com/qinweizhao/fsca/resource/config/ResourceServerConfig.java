@@ -2,7 +2,6 @@ package com.qinweizhao.fsca.resource.config;
 
 import com.qinweizhao.fsca.resource.exception.OAuthResourceAuthenticationEntryPoint;
 import com.qinweizhao.fsca.resource.exception.RequestAccessDeniedHandler;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -10,7 +9,6 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.token.DefaultTokenServices;
-import org.springframework.security.oauth2.provider.token.RemoteTokenServices;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 
@@ -30,9 +28,13 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Resource
     private JwtAccessTokenConverter jwtAccessTokenConverter;
+    @Resource
+    private RequestAccessDeniedHandler requestAccessDeniedHandler;
+    @Resource
+    private OAuthResourceAuthenticationEntryPoint authenticationEntryPoint;
 
     @Bean
-    public DefaultTokenServices tokenServices(){
+    public DefaultTokenServices tokenServices() {
         DefaultTokenServices services = new DefaultTokenServices();
         //配置令牌存储策略，使用AccessTokenConfig配置的JwtTokenStore
         services.setTokenStore(tokenStore);
@@ -41,14 +43,9 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
         return services;
     }
 
-    @Resource
-    private RequestAccessDeniedHandler requestAccessDeniedHandler;
-
-    @Resource
-    private OAuthResourceAuthenticationEntryPoint authenticationEntryPoint;
-
     /**
      * 资源服务器安全配置（资源id和令牌校验）
+     *
      * @param resources resources
      */
     @Override
@@ -65,6 +62,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     /**
      * 配置 security 的安全机制
+     *
      * @param http http
      * @throws Exception e
      */

@@ -32,20 +32,13 @@ public abstract class BaseException extends RuntimeException {
 
     public BaseException(IResponse responseEnum, Object[] args, String message) {
         super(message);
-        this.errCode=responseEnum.getCode();
+        this.errCode = responseEnum.getCode();
     }
 
     public BaseException(IResponse responseEnum, Object[] args, String message, Throwable cause) {
         super(message, cause);
-        this.errCode=responseEnum.getCode();
+        this.errCode = responseEnum.getCode();
     }
-
-
-
-
-
-
-
 
 
     public int getErrCode() {

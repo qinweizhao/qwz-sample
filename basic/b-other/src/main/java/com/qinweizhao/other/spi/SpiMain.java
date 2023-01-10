@@ -15,7 +15,7 @@ public class SpiMain {
 
         ServiceLoader<Animal> load = ServiceLoader.load(Animal.class);
         for (Animal next : load) {
-            if (next instanceof Cat){
+            if (next instanceof Cat) {
                 System.out.println(next);
             }
             System.out.println(next.getName());

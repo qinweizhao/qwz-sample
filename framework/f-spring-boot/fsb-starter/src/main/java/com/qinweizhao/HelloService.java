@@ -11,7 +11,7 @@ public class HelloService {
     private String age;
 
     public String info() {
-        return  "姓名" +name + " 年龄 " + age + " !";
+        return "姓名" + name + " 年龄 " + age + " !";
     }
 
     public String getName() {

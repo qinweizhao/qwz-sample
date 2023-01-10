@@ -22,9 +22,9 @@ public enum Response implements BusinessExceptionAssert {
      */
     private String message;
 
-    private Response(int code, String message){
-        this.code=code;
-        this.message=message;
+    private Response(int code, String message) {
+        this.code = code;
+        this.message = message;
     }
 
     @Override

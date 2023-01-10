@@ -10,15 +10,15 @@ spring:
       config:
         # 配置中心地址
         server-addr: 127.0.0.1:8848
-#        server-addr: 192.168.79.65:8848,192.168.79.66:8848,192.168.79.67:8848
+        #        server-addr: 192.168.79.65:8848,192.168.79.66:8848,192.168.79.67:8848
         # 配置文件格式
         file-extension: yml
         group: TEST
         namespace: cbb3183b-c9ef-4604-8643-4f5da6033510
         extension-configs:
-              - data-id: a.yml
-                group: TEST
-                refresh: true
-              - data-id: b.yml
-                group: TEST
-                refresh: true
+          - data-id: a.yml
+            group: TEST
+            refresh: true
+          - data-id: b.yml
+            group: TEST
+            refresh: true

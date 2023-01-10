@@ -53,7 +53,7 @@ public class FileByteStreamMain {
             reader = new InputStreamReader(fis);
             BufferedReader bufReader = new BufferedReader(reader);
             String line;
-            while ((line=bufReader.readLine() )!= null) {
+            while ((line = bufReader.readLine()) != null) {
                 System.out.println(line);
             }
 
@@ -107,7 +107,6 @@ public class FileByteStreamMain {
             }
         }
     }
-
 
 
 }

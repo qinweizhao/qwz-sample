@@ -11,6 +11,7 @@ import org.springframework.security.web.AuthenticationEntryPoint;
  * 自定义的客户端认证的过滤器，根据客户端的id、秘钥进行认证
  * 重写这个过滤器用于自定义异常处理
  * 具体认证的逻辑依然使用ClientCredentialsTokenEndpointFilter，只是设置一下AuthenticationEntryPoint为定制
+ *
  * @author weizhao
  */
 public class OAuthServerClientCredentialsTokenEndpointFilter extends ClientCredentialsTokenEndpointFilter {
@@ -21,12 +22,13 @@ public class OAuthServerClientCredentialsTokenEndpointFilter extends ClientCrede
 
     /**
      * 构造方法
-     * @param configurer AuthorizationServerSecurityConfigurer对昂
+     *
+     * @param configurer               AuthorizationServerSecurityConfigurer对昂
      * @param authenticationEntryPoint 自定义的AuthenticationEntryPoint
      */
     public OAuthServerClientCredentialsTokenEndpointFilter(AuthorizationServerSecurityConfigurer configurer, AuthenticationEntryPoint authenticationEntryPoint) {
         this.configurer = configurer;
-        this.authenticationEntryPoint=authenticationEntryPoint;
+        this.authenticationEntryPoint = authenticationEntryPoint;
     }
 
     @Override

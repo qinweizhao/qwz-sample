@@ -2,6 +2,7 @@ package com.qinweizhao.generics;
 
 /**
  * 泛型方法
+ *
  * @author qinweizhao
  * @since 2021-12-29
  */

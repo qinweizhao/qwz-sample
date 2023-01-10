@@ -29,14 +29,12 @@ public class ListMain {
     }
 
 
-
 //    public static void main(String[] args) {
 //        testList();
 //    }
 
 
-
-    public static  void testList(){
+    public static void testList() {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
@@ -56,11 +54,11 @@ public class ListMain {
         list.add(16);
         list.add(18);
         list.add(17);
-        for (Integer i :list ){
+        for (Integer i : list) {
             System.out.println(i);
         }
 
-        for (Integer i :list2 ){
+        for (Integer i : list2) {
             System.out.println(i);
         }
     }

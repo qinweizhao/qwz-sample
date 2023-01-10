@@ -12,17 +12,15 @@ package com.qinweizhao.jvm.cl;
 public class ClassInit {
 
     private static int num = 1;
+    private static int number = 10;
 
     static {
-        num=2;
+        num = 2;
         number = 20;
         System.out.println(num);
         //报错：Illegal forward reference (非法的前向引用)。
         // System.out.println(number);
     }
-
-
-    private static int number = 10;
 
     public static void main(String[] args) {
         // 2

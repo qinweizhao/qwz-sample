@@ -13,13 +13,13 @@ spring:
             # 测试 Path
             - Path=/service/**
             # 时间
-#            - After=2021-02-23T14:20:00.000+08:00[Asia/Shanghai]
+            #            - After=2021-02-23T14:20:00.000+08:00[Asia/Shanghai]
             # Cookie
-#            - Cookie=loginname, weizhao
+            #            - Cookie=loginname, weizhao
             # 请求头
-#            - Header=X-Request-Id, \d+
+            #            - Header=X-Request-Id, \d+
             # Host
-#            - Host=**.qinweizhao.com,**.qinweizhao.cn
+            #            - Host=**.qinweizhao.com,**.qinweizhao.cn
             # Method
             - Method=GET,POST
             # Query

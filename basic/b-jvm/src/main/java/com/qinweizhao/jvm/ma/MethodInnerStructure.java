@@ -8,21 +8,13 @@ import java.io.Serializable;
  */
 public class MethodInnerStructure extends Object implements Comparable<String>, Serializable {
 
+    private static String str = "测试方法的内部结构";
     /**
      * 属性
      */
     public int num = 10;
 
-    private static String str = "测试方法的内部结构";
-
-    /**
-     * 方法
-     */
-    public void test1(){
-        int count = 20;
-        System.out.println("count = " + count);
-    }
-    public static int test2(int cal){
+    public static int test2(int cal) {
         int result = 0;
         try {
             int value = 30;
@@ -31,6 +23,14 @@ public class MethodInnerStructure extends Object implements Comparable<String>, 
             e.printStackTrace();
         }
         return result;
+    }
+
+    /**
+     * 方法
+     */
+    public void test1() {
+        int count = 20;
+        System.out.println("count = " + count);
     }
 
     @Override

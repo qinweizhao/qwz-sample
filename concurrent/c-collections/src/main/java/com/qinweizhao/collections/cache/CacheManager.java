@@ -18,20 +18,18 @@ import java.util.concurrent.ConcurrentHashMap;
 public class CacheManager {
 
     /**
-     * 预缓存数据集
-     */
-    private final static ConcurrentHashMap<String, Object> CACHES;
-
-    /**
      * 单个预缓存生效时间
      * 1 * 60 * 60 * 1000L
      */
     public static final long CACHE_HOLD_TIME = 60 * 60 * 1000L;
-
     /**
      * 缓存时效时间key标识
      */
     public static final String CACHE_HOLD_TIME_KEY = "hold_time";
+    /**
+     * 预缓存数据集
+     */
+    private final static ConcurrentHashMap<String, Object> CACHES;
 
     static {
         CACHES = new ConcurrentHashMap<>();

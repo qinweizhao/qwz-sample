@@ -31,8 +31,25 @@ import javax.annotation.Resource;
 @Configuration
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
+    /**
+     * Security的认证管理器，密码模式需要用到
+     */
+    @Resource
+    AuthenticationManager authenticationManager;
     @Resource
     private OAuthServerAuthenticationEntryPoint authenticationEntryPoint;
+    /**
+     * 客户端存储策略，这里使用内存方式，后续可以存储在数据库
+     */
+    @Resource
+    private ClientDetailsService clientDetailsService;
+    /**
+     * 令牌存储策略
+     */
+    @Resource
+    private TokenStore tokenStore;
+    @Resource
+    private JwtAccessTokenConverter jwtAccessTokenConverter;
 
     /**
      * 认证服务器安全配置（令牌访问的安全约束）
@@ -83,13 +100,6 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
     }
 
-
-    /**
-     * Security的认证管理器，密码模式需要用到
-     */
-    @Resource
-    AuthenticationManager authenticationManager;
-
     /**
      * 授权码模式的service，使用授权码模式authorization_code必须注入
      */
@@ -97,23 +107,6 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     public AuthorizationCodeServices authorizationCodeServices() {
         return new InMemoryAuthorizationCodeServices();
     }
-
-
-    /**
-     * 客户端存储策略，这里使用内存方式，后续可以存储在数据库
-     */
-    @Resource
-    private ClientDetailsService clientDetailsService;
-
-    /**
-     * 令牌存储策略
-     */
-    @Resource
-    private TokenStore tokenStore;
-
-    @Resource
-    private JwtAccessTokenConverter jwtAccessTokenConverter;
-
 
     /**
      * 令牌管理服务的配置

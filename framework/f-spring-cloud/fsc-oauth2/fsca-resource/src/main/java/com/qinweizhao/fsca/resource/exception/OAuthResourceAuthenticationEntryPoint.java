@@ -14,8 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- *
  * TOKEN失效或者校验失败的处理器
+ *
  * @author weizhao
  */
 @Component
@@ -25,6 +25,6 @@ public class OAuthResourceAuthenticationEntryPoint implements AuthenticationEntr
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException {
         //TODO token失效提示
-        ResponseUtils.result(response,new Result(ResultCode.TOKEN_INVALID.getCode(),ResultCode.TOKEN_INVALID.getMsg(),null));
+        ResponseUtils.result(response, new Result(ResultCode.TOKEN_INVALID.getCode(), ResultCode.TOKEN_INVALID.getMsg(), null));
     }
 }
