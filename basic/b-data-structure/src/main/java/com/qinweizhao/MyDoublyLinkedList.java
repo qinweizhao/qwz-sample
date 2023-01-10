@@ -2,8 +2,8 @@ package com.qinweizhao;
 
 /**
  * 基于双向链表实现元素存取的容器
- *
- * @param <E>
+ * @author qinweizhao
+ * @since 2021-11-26
  */
 public class MyDoublyLinkedList<E> implements MyList<E> {
 

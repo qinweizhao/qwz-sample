@@ -5,6 +5,8 @@ import java.util.EmptyStackException;
 
 /**
  * 自定义栈容器
+ * @author qinweizhao
+ * @since 2021-11-26
  */
 public class MyStack<E> {
     private Object[] arr;//存放元素的物理结构

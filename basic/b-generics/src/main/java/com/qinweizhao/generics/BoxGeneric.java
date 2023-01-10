@@ -3,7 +3,7 @@ package com.qinweizhao.generics;
 /**
  * 泛型类
  * @author qinweizhao
- * @since 2021/12/29
+ * @since 2021-12-29
  */
 public class BoxGeneric<T> {
 

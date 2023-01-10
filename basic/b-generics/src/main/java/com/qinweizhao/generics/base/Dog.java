@@ -5,7 +5,7 @@ import lombok.EqualsAndHashCode;
 
 /**
  * @author qinweizhao
- * @since 2021/12/29
+ * @since 2021-12-29
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

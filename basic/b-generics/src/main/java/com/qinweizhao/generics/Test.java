@@ -4,7 +4,7 @@ package com.qinweizhao.generics;
  * Class<T> 和 Class<?> 区别
  *
  * @author qinweizhao
- * @since 2021/12/29
+ * @since 2021-12-29
  */
 public class Test {
 

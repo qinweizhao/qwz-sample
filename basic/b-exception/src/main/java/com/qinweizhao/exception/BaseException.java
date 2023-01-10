@@ -4,7 +4,7 @@ package com.qinweizhao.exception;
  * Base Exception 是所有异常的父级
  *
  * @author qinweizhao
- * @since 2022/4/12
+ * @since 2022-04-12
  */
 public abstract class BaseException extends RuntimeException {
 

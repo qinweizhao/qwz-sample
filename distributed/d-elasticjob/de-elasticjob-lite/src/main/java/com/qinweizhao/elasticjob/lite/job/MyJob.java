@@ -5,7 +5,7 @@ import org.apache.shardingsphere.elasticjob.simple.job.SimpleJob;
 
 /**
  * @author qinweizhao
- * @since 2022/10/14
+ * @since 2022-10-14
  */
 public class MyJob implements SimpleJob {
 

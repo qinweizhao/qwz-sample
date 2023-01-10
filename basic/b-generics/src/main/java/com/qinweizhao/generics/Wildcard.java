@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @author qinweizhao
- * @since 2021/12/29
+ * @since 2021-12-29
  */
 public class Wildcard {
 

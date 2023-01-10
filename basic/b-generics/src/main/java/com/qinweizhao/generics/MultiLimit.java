@@ -2,7 +2,7 @@ package com.qinweizhao.generics;
 
 /**
  * @author qinweizhao
- * @since 2021/12/29
+ * @since 2021-12-29
  */
 public class MultiLimit implements MultiLimitInterfaceA, MultiLimitInterfaceB {
 

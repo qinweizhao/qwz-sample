@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * @author qinweizhao
- * @since 2021/12/29
+ * @since 2021-12-29
  */
 @Data
 public abstract class Animal
