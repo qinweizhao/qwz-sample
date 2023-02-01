@@ -35,5 +35,6 @@
         <module>b-other</module>
         <module>b-generics</module>
         <module>b-tool</module>
+        <module>b-async</module>
     </modules>
 </project>
