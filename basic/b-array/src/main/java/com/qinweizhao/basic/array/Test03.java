@@ -1,4 +1,4 @@
-package com.qinweizhao.array;
+package com.qinweizhao.basic.array;
 
 import java.util.Arrays;
 

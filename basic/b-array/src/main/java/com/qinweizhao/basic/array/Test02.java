@@ -1,4 +1,4 @@
-package com.qinweizhao.array;
+package com.qinweizhao.basic.array;
 
 /**
  * @author qinweizhao
