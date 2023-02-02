@@ -1,4 +1,4 @@
-package com.qinweizhao.exception;
+package com.qinweizhao.basic.exception;
 
 /**
  * @author qinweizhao

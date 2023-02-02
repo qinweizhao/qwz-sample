@@ -1,4 +1,4 @@
-package com.qinweizhao.exception;
+package com.qinweizhao.basic.exception;
 
 import java.io.FileReader;
 import java.io.IOException;

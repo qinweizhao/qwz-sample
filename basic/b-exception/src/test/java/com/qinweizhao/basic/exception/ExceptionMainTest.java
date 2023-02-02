@@ -1,6 +1,6 @@
-package com.qinweizhao;
+package com.qinweizhao.basic.exception;
 
-import com.qinweizhao.exception.ExceptionMain;
+import com.qinweizhao.basic.exception.ExceptionMain;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;

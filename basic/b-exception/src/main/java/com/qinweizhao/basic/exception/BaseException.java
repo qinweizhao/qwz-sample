@@ -1,4 +1,4 @@
-package com.qinweizhao.exception;
+package com.qinweizhao.basic.exception;
 
 /**
  * Base Exception 是所有异常的父级
