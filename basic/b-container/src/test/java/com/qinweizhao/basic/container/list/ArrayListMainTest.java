@@ -1,4 +1,4 @@
-package com.qinweizhaoq.list;
+package com.qinweizhao.basic.container.list;
 
 import com.qinweizhao.basic.container.list.ArrayListMain;
 import org.junit.jupiter.api.Test;

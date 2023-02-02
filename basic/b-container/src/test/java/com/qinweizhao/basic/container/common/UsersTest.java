@@ -1,4 +1,4 @@
-package com.qinweizhaoq.common;
+package com.qinweizhao.basic.container.common;
 
 import org.junit.jupiter.api.Test;
 

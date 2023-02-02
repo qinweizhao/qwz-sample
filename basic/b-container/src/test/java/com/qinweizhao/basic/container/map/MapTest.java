@@ -1,4 +1,4 @@
-package com.qinweizhaoq.map;
+package com.qinweizhao.basic.container.map;
 
 import org.junit.jupiter.api.Test;
 
