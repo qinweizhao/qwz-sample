@@ -1,4 +1,4 @@
-package com.qinweizhao.eight.stream;
+package com.qinweizhao.basic.features.eight.stream;
 
 /**
  * @author YVKG

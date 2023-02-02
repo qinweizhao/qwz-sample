@@ -1,4 +1,4 @@
-package com.qinweizhao.eight.lambda;
+package com.qinweizhao.basic.features.eight.lambda;
 
 public class Test7 {
     public static void main(String[] args) {

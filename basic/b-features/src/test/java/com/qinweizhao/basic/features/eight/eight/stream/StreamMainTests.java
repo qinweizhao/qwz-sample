@@ -1,6 +1,6 @@
-package eight.stream;
+package com.qinweizhao.basic.features.eight.eight.stream;
 
-import com.qinweizhao.eight.stream.StreamMain;
+import com.qinweizhao.basic.features.eight.stream.StreamMain;
 import org.junit.jupiter.api.Test;
 
 

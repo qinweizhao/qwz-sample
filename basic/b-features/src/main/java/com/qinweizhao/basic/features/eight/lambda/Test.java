@@ -1,4 +1,4 @@
-package com.qinweizhao.eight.lambda;
+package com.qinweizhao.basic.features.eight.lambda;
 
 /**
  * 无返回值，无参数
