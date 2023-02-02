@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.basic.data.structure;
 
 import java.util.ArrayList;
 import java.util.HashMap;

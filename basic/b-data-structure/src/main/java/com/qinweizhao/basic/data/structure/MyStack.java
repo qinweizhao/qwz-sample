@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.basic.data.structure;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;

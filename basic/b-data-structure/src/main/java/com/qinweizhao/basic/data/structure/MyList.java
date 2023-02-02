@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.basic.data.structure;
 
 /**
  * 基于链表结构存取元素的方法API定义

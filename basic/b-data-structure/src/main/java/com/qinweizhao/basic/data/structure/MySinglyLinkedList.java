@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.basic.data.structure;
 
 /**
  * 基于单向链表实现元素存取的容器
