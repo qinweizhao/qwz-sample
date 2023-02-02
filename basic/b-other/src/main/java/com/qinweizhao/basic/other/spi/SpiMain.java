@@ -1,7 +1,7 @@
-package com.qinweizhao.other.spi;
+package com.qinweizhao.basic.other.spi;
 
-import com.qinweizhao.other.spi.service.Animal;
-import com.qinweizhao.other.spi.service.impl.Cat;
+import com.qinweizhao.basic.other.spi.service.Animal;
+import com.qinweizhao.basic.other.spi.service.impl.Cat;
 
 import java.util.ServiceLoader;
 

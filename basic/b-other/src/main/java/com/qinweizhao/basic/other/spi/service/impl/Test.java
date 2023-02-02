@@ -1,4 +1,4 @@
-package com.qinweizhao.other.spi.service.impl;
+package com.qinweizhao.basic.other.spi.service.impl;
 
 /**
  * @author qinweizhao
