@@ -1,4 +1,4 @@
-package com.qinweizhao.jvm.start;
+package com.qinweizhao.basic.jvm.start;
 
 /**
  * @author qinweizhao

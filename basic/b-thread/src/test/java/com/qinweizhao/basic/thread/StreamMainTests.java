@@ -1,4 +1,4 @@
-package eight;
+package com.qinweizhao.basic.thread;
 
 import org.junit.jupiter.api.Test;
 
