@@ -1,4 +1,4 @@
-package com.qinweizhao.generics.base;
+package com.qinweizhao.basic.generics.base;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

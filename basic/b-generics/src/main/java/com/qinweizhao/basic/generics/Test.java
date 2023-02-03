@@ -1,4 +1,4 @@
-package com.qinweizhao.generics;
+package com.qinweizhao.basic.generics;
 
 /**
  * Class<T> 和 Class<?> 区别

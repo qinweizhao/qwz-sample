@@ -1,7 +1,7 @@
-package com.qinweizhao.generics;
+package com.qinweizhao.basic.generics;
 
-import com.qinweizhao.generics.base.Animal;
-import com.qinweizhao.generics.base.Dog;
+import com.qinweizhao.basic.generics.base.Animal;
+import com.qinweizhao.basic.generics.base.Dog;
 
 import java.util.ArrayList;
 import java.util.List;

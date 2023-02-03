@@ -1,4 +1,4 @@
-package com.qinweizhao.generics;
+package com.qinweizhao.basic.generics;
 
 /**
  * 泛型类
