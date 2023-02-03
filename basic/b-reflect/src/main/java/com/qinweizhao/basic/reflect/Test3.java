@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.basic.reflect;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.basic.reflect;
 
 public class GetClassInfo {
     public static void main(String[] args) {

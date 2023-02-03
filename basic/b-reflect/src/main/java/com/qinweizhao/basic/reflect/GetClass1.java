@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.basic.reflect;
 
 /**
  * getClass()获取Class对象

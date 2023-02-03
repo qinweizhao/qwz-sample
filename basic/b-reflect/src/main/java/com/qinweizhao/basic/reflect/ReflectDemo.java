@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.basic.reflect;
 
 public class ReflectDemo {
     public void method1() {

@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.basic.reflect;
 
 /**
  * .class静态属性获取Class对象

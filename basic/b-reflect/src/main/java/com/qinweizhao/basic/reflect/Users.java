@@ -1,4 +1,4 @@
-package com.qinweizhao;
+package com.qinweizhao.basic.reflect;
 
 import java.io.Serializable;
 import java.util.ArrayList;
