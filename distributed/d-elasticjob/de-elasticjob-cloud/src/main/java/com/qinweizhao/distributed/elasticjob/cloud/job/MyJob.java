@@ -1,4 +1,4 @@
-package com.qinweizhao.elasticjob.cloud.job;
+package com.qinweizhao.distributed.elasticjob.cloud.job;
 
 import org.apache.shardingsphere.elasticjob.api.ShardingContext;
 import org.apache.shardingsphere.elasticjob.simple.job.SimpleJob;

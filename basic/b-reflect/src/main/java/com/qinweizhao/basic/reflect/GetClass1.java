@@ -2,6 +2,8 @@ package com.qinweizhao.basic.reflect;
 
 /**
  * getClass()获取Class对象
+ * @author qinweizhao
+ * @since 2021-11-26
  */
 public class GetClass1 {
     public static void main(String[] args) {

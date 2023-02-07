@@ -1,7 +1,7 @@
-package com.qinweizhao.elasticjob.lite;
+package com.qinweizhao.distributed.elasticjob.lite;
 
 
-import com.qinweizhao.elasticjob.lite.job.MyJob;
+import com.qinweizhao.distributed.elasticjob.lite.job.MyJob;
 import org.apache.shardingsphere.elasticjob.api.JobConfiguration;
 import org.apache.shardingsphere.elasticjob.http.props.HttpJobProperties;
 import org.apache.shardingsphere.elasticjob.lite.api.bootstrap.impl.OneOffJobBootstrap;

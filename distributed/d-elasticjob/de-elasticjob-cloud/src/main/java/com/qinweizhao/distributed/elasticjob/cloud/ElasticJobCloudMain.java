@@ -1,7 +1,7 @@
-package com.qinweizhao.elasticjob.cloud;
+package com.qinweizhao.distributed.elasticjob.cloud;
 
 
-import com.qinweizhao.elasticjob.cloud.job.MyJob;
+import com.qinweizhao.distributed.elasticjob.cloud.job.MyJob;
 import org.apache.shardingsphere.elasticjob.api.JobConfiguration;
 import org.apache.shardingsphere.elasticjob.cloud.executor.local.LocalTaskExecutor;
 

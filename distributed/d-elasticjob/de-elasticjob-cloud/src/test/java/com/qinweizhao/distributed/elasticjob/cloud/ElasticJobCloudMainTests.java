@@ -1,4 +1,4 @@
-package com.qinweizhao.elasticjob.cloud;
+package com.qinweizhao.distributed.elasticjob.cloud;
 
 import org.junit.jupiter.api.Test;
 
