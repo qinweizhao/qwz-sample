@@ -1,4 +1,4 @@
-package com.qinweizhao.collections;
+package com.qinweizhao.concurrent.collections;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

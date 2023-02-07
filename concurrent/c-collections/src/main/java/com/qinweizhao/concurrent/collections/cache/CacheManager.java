@@ -1,4 +1,4 @@
-package com.qinweizhao.collections.cache;
+package com.qinweizhao.concurrent.collections.cache;
 
 import org.apache.commons.lang.StringUtils;
 import org.springframework.context.annotation.Configuration;

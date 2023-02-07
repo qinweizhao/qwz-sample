@@ -1,4 +1,4 @@
-package com.qinweizhao.collections;
+package com.qinweizhao.concurrent.collections;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
