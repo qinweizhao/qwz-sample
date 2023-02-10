@@ -1,6 +1,6 @@
-package com.qinweizhao;
+package com.qinweizhao.framework.spring.boot.config;
 
-import com.qinweizhao.entity.Person;
+import com.qinweizhao.framework.spring.boot.config.entity.Person;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

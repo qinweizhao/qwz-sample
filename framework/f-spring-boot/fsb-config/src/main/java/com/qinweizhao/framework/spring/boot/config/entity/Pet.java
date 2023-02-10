@@ -1,4 +1,4 @@
-package com.qinweizhao.entity;
+package com.qinweizhao.framework.spring.boot.config.entity;
 
 
 import lombok.Data;

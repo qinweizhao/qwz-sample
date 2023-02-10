@@ -1,4 +1,4 @@
-package com.qinweizhao.support;
+package com.qinweizhao.framework.spring.boot.config.support;
 
 import org.springframework.beans.factory.config.YamlPropertiesFactoryBean;
 import org.springframework.core.env.PropertiesPropertySource;
