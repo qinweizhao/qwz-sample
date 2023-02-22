@@ -1,4 +1,4 @@
-package com.qinweizhao.basic.tool;
+package com.qinweizhao.basic.tool.svn;
 
 import org.tmatesoft.svn.core.SVNException;
 import org.tmatesoft.svn.core.SVNURL;
