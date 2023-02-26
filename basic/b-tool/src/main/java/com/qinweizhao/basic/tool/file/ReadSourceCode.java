@@ -1,17 +1,17 @@
 package com.qinweizhao.basic.tool.file;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.filefilter.FileFilterUtils;
+import org.apache.commons.io.filefilter.IOFileFilter;
+import org.apache.commons.io.filefilter.TrueFileFilter;
+import org.apache.commons.lang3.StringUtils;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.filefilter.FileFilterUtils;
-import org.apache.commons.io.filefilter.IOFileFilter;
-import org.apache.commons.io.filefilter.TrueFileFilter;
-import org.apache.commons.lang3.StringUtils;
 
 public class ReadSourceCode {
 
@@ -26,7 +26,7 @@ public class ReadSourceCode {
 			Collection<File> fileCollection = FileUtils.listFiles(targetFile, javaSuffixFilter,TrueFileFilter.INSTANCE);
 			for (File file : fileCollection) {
 				System.out.println(">>> " + file.getPath());
-				List<String> listStr = FileUtils.readLines(file, Charset.forName("UTF-8"));
+				List<String> listStr = FileUtils.readLines(file, String.valueOf(Charset.forName("UTF-8")));
 				for (String string : listStr) {
 					if(StringUtils.isNoneBlank(string)) {
 						System.out.println(string.trim());
