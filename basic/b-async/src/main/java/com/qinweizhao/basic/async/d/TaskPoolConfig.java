@@ -15,12 +15,6 @@ import java.util.concurrent.Executor;
 @Configuration
 public class TaskPoolConfig {
 
-    /**
-     * 自定义线程池
-     *
-     * @author: jacklin
-     * @since: 2021/11/16 17:41
-     **/
     @Bean("taskExecutor")
     public Executor taskExecutor() {
         //返回可用处理器的Java虚拟机的数量 12

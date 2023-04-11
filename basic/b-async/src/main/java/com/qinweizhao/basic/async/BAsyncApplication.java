@@ -1,4 +1,4 @@
-package com.qinweizhao.b.async;
+package com.qinweizhao.basic.async;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
