@@ -1,10 +1,9 @@
-package com.yetech.pdf.sample;
+package com.qinweizhao.pdf.sample;
 
 import com.lowagie.text.*;
-import com.lowagie.text.pdf.BaseFont;
 import com.lowagie.text.pdf.PdfWriter;
+import com.qinweizhao.pdf.util.FontUtil;
 
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -18,7 +17,7 @@ public class PdfNestedTables {
 
 	public static void main(String[] args) {
 
-		String fileName = "/Users/weizhao/Code/qwz/qwz-solution/solution-yet/yet-pdf/pdf-demo/src/test/resources/out/" + System.currentTimeMillis() + ".pdf";
+		String fileName = "/Users/weizhao/Code/qwz/qwz-sample/basic/b-pdf/src/test/resources/out/" + System.currentTimeMillis() + ".pdf";
 		sample(fileName);
 
 	}
@@ -28,9 +27,9 @@ public class PdfNestedTables {
 
 		try {
 			Document document = new Document(PageSize.A4);
-//			document.setMargins(70, 70, 20, 10);
+			document.setMargins(70, 70, 20, 10);
 			PdfWriter.getInstance(document, Files.newOutputStream(Paths.get(fileName)));
-			Font font = getFont();
+			Font font = FontUtil.getFont();
 
 			HeaderFooter footer = new HeaderFooter(new Phrase("页码：",font), true);
 			footer.setAlignment(HeaderFooter.ALIGN_CENTER);
@@ -134,15 +133,6 @@ public class PdfNestedTables {
 			e.printStackTrace();
 		}
 
-	}
-
-	private static Font getFont() throws DocumentException, IOException {
-		//创建标题字体
-		BaseFont title = BaseFont.createFont("/Users/weizhao/Code/qwz/qwz-solution/solution-yet/yet-pdf/pdf-demo/src/test/resources/fonts/SIMHEI.TTF", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
-		//上面是基础的字体，代表使用哪一种字体，下面设置的是字体的字号，粗细等等属性
-		//使用上面的title 字体 加粗，这个是标题字体
-		Font font = new Font(title, 22, Font.BOLD);
-		return font;
 	}
 
 
