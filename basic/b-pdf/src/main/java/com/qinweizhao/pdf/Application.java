@@ -28,7 +28,7 @@ public class Application {
 
 //        image();
         try {
-            test2();
+            test();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -47,7 +47,7 @@ public class Application {
             //设置文档的页边距就是距离页面边上的距离，分别为：左边距，右边距，上边距，下边距
             document.setMargins(70, 70, 20, 10);
             //这个是生成破pdf的位置以及名称
-            String fileName = "/Users/weizhao/Code/qwz/qwz-solution/solution-yet/yet-pdf/pdf-demo/src/test/resources/out/" + System.currentTimeMillis() + ".pdf";
+            String fileName = "/Users/weizhao/Code/qwz/qwz-sample/basic/b-pdf/src/test/resources/out/" + System.currentTimeMillis() + ".pdf";
             PdfWriter pdfWriter = PdfWriter.getInstance(document, Files.newOutputStream(Paths.get(fileName)));
             //打开文档
             document.open();
@@ -382,7 +382,7 @@ public class Application {
 
         // 4、添加内容
         //创建字体
-        BaseFont bf = BaseFont.createFont("/Users/weizhao/Code/qwz/qwz-solution/solution-yet/yet-pdf/pdf-demo/src/test/resources/fonts/V100002_.TTF", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+        BaseFont bf = BaseFont.createFont("/Users/weizhao/Code/qwz/qwz-sample/basic/b-pdf/src/test/resources/fonts/V100002_.TTF", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
         //使用字体，正文字体
         Font font = new Font(bf, 60);
 

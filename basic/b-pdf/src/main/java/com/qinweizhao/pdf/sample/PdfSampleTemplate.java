@@ -1,11 +1,9 @@
 package com.qinweizhao.pdf.sample;
 
 import com.lowagie.text.*;
-import com.lowagie.text.pdf.BaseFont;
 import com.lowagie.text.pdf.PdfWriter;
 import com.qinweizhao.pdf.util.FontUtil;
 
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -38,21 +36,15 @@ public class PdfSampleTemplate {
 			footer.setBorder(Rectangle.NO_BORDER);
 			document.setFooter(footer);
 			document.open();
-//
-//			Font arialFont = new RtfFont("黑 体");
-//			Font songFont = new RtfFont("宋 体");
-//			Font imitationSongFont = new RtfFont("仿宋");
-
-//			BaseFont bfChinese = BaseFont.createFont("STSong-Light", "UniGB-UCS2-H", BaseFont.NOT_EMBEDDED);
-//			Font fontChinese = new Font(bfChinese, 12, com.lowagie.text.Font.NORMAL);
 
 
 			Phrase ph = new Phrase();
-//			ph.add(new Chunk("这是黑体字体输出的文字", arialFont));
-//			ph.add(new Chunk("这是宋体字体输出的文字", songFont));
-//			ph.add(new Chunk("这是仿宋字体输出的文字", imitationSongFont));
-			ph.add(new Chunk("你好", font));
+			ph.add(new Chunk("你好1", font));
 			document.add(ph);
+			document.newPage();
+			Phrase p = new Phrase();
+			ph.add(new Chunk("你好2", font));
+			document.add(p);
 
 			document.close();
 
