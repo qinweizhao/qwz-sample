@@ -21,5 +21,6 @@
         <module>fsb-logging</module>
         <module>fsb-starter</module>
         <module>fsb-util</module>
+        <module>fsb-error</module>
     </modules>
 </project>

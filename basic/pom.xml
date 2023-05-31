@@ -36,6 +36,7 @@
         <module>b-generics</module>
         <module>b-tool</module>
         <module>b-async</module>
+        <module>b-ftp</module>
         <module>b-pdf</module>
     </modules>
 </project>

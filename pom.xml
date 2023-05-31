@@ -16,7 +16,6 @@
         <module>framework</module>
         <module>middleware</module>
         <module>distributed</module>
-        <module>basic/b-ftp</module>
     </modules>
 
     <properties>
