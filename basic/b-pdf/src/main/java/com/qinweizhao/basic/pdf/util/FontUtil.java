@@ -1,4 +1,4 @@
-package com.qinweizhao.pdf.util;
+package com.qinweizhao.basic.pdf.util;
 
 import com.lowagie.text.DocumentException;
 import com.lowagie.text.Font;

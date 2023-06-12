@@ -1,4 +1,4 @@
-package com.qinweizhao.pdf.sample;
+package com.qinweizhao.basic.pdf.sample;
 
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;

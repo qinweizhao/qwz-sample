@@ -1,8 +1,8 @@
-package com.qinweizhao.pdf.sample;
+package com.qinweizhao.basic.pdf.sample;
 
 import com.lowagie.text.*;
 import com.lowagie.text.pdf.PdfWriter;
-import com.qinweizhao.pdf.util.FontUtil;
+import com.qinweizhao.basic.pdf.util.FontUtil;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;

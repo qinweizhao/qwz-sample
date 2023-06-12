@@ -1,10 +1,10 @@
-package com.qinweizhao.pdf.sample;
+package com.qinweizhao.basic.pdf.sample;
 
 import com.lowagie.text.Font;
 import com.lowagie.text.Rectangle;
 import com.lowagie.text.*;
 import com.lowagie.text.pdf.PdfWriter;
-import com.qinweizhao.pdf.util.FontUtil;
+import com.qinweizhao.basic.pdf.util.FontUtil;
 
 import java.awt.*;
 import java.nio.file.Files;

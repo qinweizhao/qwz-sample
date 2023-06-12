@@ -1,11 +1,11 @@
-package com.qinweizhao.pdf.sample;
+package com.qinweizhao.basic.pdf.sample;
 
 import com.lowagie.text.*;
 import com.lowagie.text.pdf.PdfDocument;
 import com.lowagie.text.pdf.PdfReader;
 import com.lowagie.text.pdf.PdfWriter;
-import com.qinweizhao.pdf.util.FontUtil;
-import com.qinweizhao.pdf.util.PdfUtils;
+import com.qinweizhao.basic.pdf.util.FontUtil;
+import com.qinweizhao.basic.pdf.util.PdfUtils;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
