@@ -38,5 +38,6 @@
         <module>b-async</module>
         <module>b-ftp</module>
         <module>b-pdf</module>
+        <module>b-image</module>
     </modules>
 </project>
