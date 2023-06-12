@@ -26,24 +26,31 @@ public class PdfSampleTemplate {
 	public static void sample(String fileName) {
 
 		try {
-			Document document = new Document(PageSize.A4);
-			document.setMargins(70, 70, 20, 10);
+			Document document = new Document();
+			document.setMargins(71, 70, 20, 10);
 			PdfWriter.getInstance(document, Files.newOutputStream(Paths.get(fileName)));
+
+
 			Font font = FontUtil.getFont();
 
 			HeaderFooter footer = new HeaderFooter(new Phrase("页码：",font), true);
 			footer.setAlignment(HeaderFooter.ALIGN_CENTER);
 			footer.setBorder(Rectangle.NO_BORDER);
 			document.setFooter(footer);
+
+
 			document.open();
-
-
+			document.newPage();
+			document.setPageSize(PageSize.A4);
 			Phrase ph = new Phrase();
 			ph.add(new Chunk("你好1", font));
 			document.add(ph);
+
+
 			document.newPage();
+			document.setPageSize(PageSize.A4);
 			Phrase p = new Phrase();
-			ph.add(new Chunk("你好2", font));
+			p.add(new Chunk("你好2", font));
 			document.add(p);
 
 			document.close();
