@@ -31,10 +31,12 @@ public class Pdf417 {
         //Step 3—Open the Document.
         document.open();
         //Step 4—Add content.
-        document.add(new Paragraph("Hello World"));
+        Paragraph helloWorld = new Paragraph("Hello World");
+        document.add(helloWorld);
         PdfContentByte cb = new PdfContentByte(pdfWriter);
         generateQRcode(cb, document);
         //Step 5—Close the Document.
+
         document.close();
     }
 
@@ -50,6 +52,9 @@ public class Pdf417 {
         code128Image.setAbsolutePosition(10, 600);
         code128Image.scalePercent(100);
         document.add(code128Image);
+
+
+
 
 //        BarcodeQRCode qrcode = new BarcodeQRCode(myString.trim(), 1, 1, null);
 //        Image qrcodeImage = qrcode.getImage();
