@@ -24,8 +24,13 @@ public class PatternCanvas {
 	 */
 	public static PdfPatternPainter grid(PdfContentByte pcb) {
 		PdfPatternPainter painter = pcb.createPattern(8, 8, null);
-		painter.setLineWidth(0);
-		painter.setLineDash(1,1,0);
+		painter.setLineWidth(0.3F);
+
+//		float[] array1 =  {0.3F,0.3F,0.3F,0.3F,0.3F,0.3F};
+
+		painter.setLineDash(1,3,8F);
+//		painter.setLineCap(LINE_CAP_PROJECTING_SQUARE);
+//		painter.setLineCap(LINE_CAP_PROJECTING_SQUARE);
 
 		// H-横线
 		painter.moveTo(0, 2);

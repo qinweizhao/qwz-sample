@@ -23,5 +23,10 @@ public class FontUtil {
         return new Font(title, 22, Font.BOLD);
     }
 
+    public static BaseFont getBaseFont() throws DocumentException, IOException {
+        return BaseFont.createFont("/Users/weizhao/Code/qwz/qwz-sample/basic/b-pdf/src/test/resources/fonts/SIMHEI.TTF", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+
+    }
+
 
 }

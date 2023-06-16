@@ -40,7 +40,7 @@ public class DiamondGrid {
             PdfContentByte pcb = pdfWriter.getDirectContent();
             // an example of a rectangle with a diagonal in very thick lines
             pcb.setLineWidth(0f);
-            //pcb.setColorStroke(Color.black);
+//            pcb.setColorStroke(Color.black);
 
 
             PdfPatternPainter painter= PatternCanvas.grid(pcb);
@@ -68,12 +68,5 @@ public class DiamondGrid {
         }
 
     }
-
-
-//    public final void drawLine(double x1, double y1, double x2, double y2) {
-//        for (double x = x1; x < x2; x++) {
-//            set(x, y1 + (y2 - y1) * (x - x1) / (x2 - x1));
-//        }
-//    }
 
 }
