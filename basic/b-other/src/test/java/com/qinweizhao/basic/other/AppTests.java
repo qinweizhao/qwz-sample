@@ -5,14 +5,11 @@ package com.qinweizhao.basic.other;
  * @since 2023-06-15
  */
 public class AppTests {
-   static  {
-        System.out.println("static {}");
+
+    public static void main(String[] args) {
+        Start start = new Start();
+        Start star1t = new Start();
     }
-    {
-        System.out.println("{}");
-    }
-    AppTests(){
-        System.out.println("AppTests()");
-    }
+
 
 }
