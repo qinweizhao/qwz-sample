@@ -1,6 +1,6 @@
 package com.qinweizhao.basic.io.bytestream;
 
-import com.qinweizhao.basic.io.FileByteStreamMain;
+import com.qinweizhao.basic.io.demo.FileByteStreamMain;
 import org.junit.jupiter.api.Test;
 
 /**
