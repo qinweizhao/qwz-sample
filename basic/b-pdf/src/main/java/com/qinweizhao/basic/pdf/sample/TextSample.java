@@ -43,19 +43,41 @@ public class TextSample {
 
 			document.open();
 
+
 			//添加文本
 			PdfContentByte cb = writer.getDirectContent();
 			BaseFont bf = FontUtil.getBaseFont();
 
+			// 用0.1厚度的下划线创建一个块
+			Chunk underline = new Chunk("The quick brown fox ");
+			underline.setUnderline(0.1f, -1f);
+			document.add(underline);
+
+
+
+			// 创建厚度为1的穿墙大块
+			Chunk strike = new Chunk("jumps over the lazy dog.");
+			strike.setUnderline(1f, 3f);
+			document.add(strike);
+
+
+
 			cb.beginText();
 			cb.setFontAndSize(bf, 12);
-			cb.setTextMatrix(200, 500);
-			cb.showText("这是要展示的文");
+			cb.setTextMatrix(50, 500);
+			cb.showText("自动换行");
 			cb.endText();
+
 			cb.beginText();
 			cb.setFontAndSize(bf, 12);
-			cb.setTextMatrix(200, 400);
-			cb.showText("字测试");
+			cb.setTextMatrix(50, 485);
+			cb.showText("测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测");
+			cb.endText();
+
+			cb.beginText();
+			cb.setFontAndSize(bf, 12);
+			cb.setTextMatrix(60, 470);
+			cb.showText("试测试测试测试测试测试测试");
 			cb.endText();
 
 			document.close();
