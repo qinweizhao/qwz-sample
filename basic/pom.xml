@@ -39,6 +39,7 @@
         <module>b-ftp</module>
         <module>b-pdf</module>
         <module>b-image</module>
+        <module>b-email</module>
     </modules>
 
 
