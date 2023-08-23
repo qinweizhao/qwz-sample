@@ -48,7 +48,7 @@ public class ExchangeMailUtils {
      * @return 邮件服务
      */
     private ExchangeService getExchangeService() {
-        ExchangeService service = new ExchangeService(ExchangeVersion.Exchange2007_SP1);
+        ExchangeService service = new ExchangeService(ExchangeVersion.Exchange2010);
         //用户认证信息
         ExchangeCredentials credentials;
         if (domain == null) {
