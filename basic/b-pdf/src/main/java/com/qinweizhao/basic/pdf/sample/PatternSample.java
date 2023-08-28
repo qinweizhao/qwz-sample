@@ -18,10 +18,10 @@ import java.io.FileOutputStream;
  * @author qinweizhao
  * @since 2023-06-16
  */
-public class DiamondGrid {
+public class PatternSample {
     public static void main(String[] args) {
         // Creating a PdfWriter
-        String dest = "/Users/weizhao/Code/qwz/qwz-sample/basic/b-pdf/src/main/resources/out/DiamondGrid.pdf";
+        String dest = "/Users/weizhao/Code/qwz/qwz-sample/basic/b-pdf/src/main/resources/out/Pattern.pdf";
         canvasLine(dest);
     }
 
