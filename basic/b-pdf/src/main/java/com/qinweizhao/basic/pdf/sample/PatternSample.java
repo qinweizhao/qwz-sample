@@ -1,5 +1,6 @@
 package com.qinweizhao.basic.pdf.sample;
 
+import com.lowagie.text.Chunk;
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
 import com.lowagie.text.PageSize;
@@ -41,33 +42,133 @@ public class PatternSample {
             // an example of a rectangle with a diagonal in very thick lines
 //            pcb.setLineWidth(0f);
 //            pcb.setColorStroke(Color.black);
+            document.newPage();
 
 
-//            PdfPatternPainter painter= PatternCanvas.grid(pcb);
-//            pcb.setPatternFill(painter, Color.black);
-//            pcb.rectangle(100, 400, 400, 300);
-//            pcb.fillStroke();
-//            pcb.sanityCheck();
-//
-//            document.newPage();
-//            pcb.setRGBColorFill(183,183,183);
+            /*
+             * 5%
+             */
+
+            Chunk chunk5 = new Chunk("5%");
+            chunk5.setUnderline(0.1f, -1f);
+            document.add(chunk5);
+
             pcb.setRGBColorFill(255,255,255);
-//            pcb.rectangle(100, 400, 400, 50);
-//            pcb.rectangle(100, 400,378.70865F, 38.267715F );
-            pcb.rectangle(100, 400,28.34645652770996F, 28.34645652770996F );
-//            pcb.setLineWidth(1f);
-//            pcb.setColorStroke(Color.black);
-//            pcb.stroke();
-            pcb.fill();
-//            PdfPatternPainter painter2= PatternCanvas.dottedLine_5(pcb);
-            PdfPatternPainter painter2= PatternCanvas.dottedLine_40(pcb);
-//            pcb.setPatternFill(painter2, Color.BLACK);
-            pcb.setPatternFill(painter2, new Color(89,89,89));
-//            pcb.setPatternFill(painter2);
-//            pcb.rectangle(100, 400, 400, 300);
-            pcb.rectangle(100, 400,28.34645652770996F, 28.34645652770996F );
-            pcb.fill();
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painter5= PatternCanvas.dottedLine_5(pcb);
+            pcb.setPatternFill(painter5, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
             pcb.sanityCheck();
+
+
+            /*
+             * 10%
+             */
+            document.newPage();
+            Chunk chunk10 = new Chunk("10%");
+            chunk10.setUnderline(0.1f, -1f);
+            document.add(chunk10);
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painter10= PatternCanvas.dottedLine_10(pcb);
+            pcb.setPatternFill(painter10, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+            /*
+             * 20%
+             */
+            document.newPage();
+            Chunk chunk20 = new Chunk("20%");
+            chunk20.setUnderline(0.1f, -1f);
+            document.add(chunk20);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painter20 = PatternCanvas.dottedLine_20(pcb);
+            pcb.setPatternFill(painter20, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+            /*
+             * 25%
+             */
+            document.newPage();
+            Chunk chunk25 = new Chunk("25%");
+            chunk25.setUnderline(0.1f, -1f);
+            document.add(chunk25);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painter25 = PatternCanvas.dottedLine_25(pcb);
+            pcb.setPatternFill(painter25, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+            /*
+             * 30%
+             */
+            document.newPage();
+            Chunk chunk30 = new Chunk("30%");
+            chunk30.setUnderline(0.1f, -1f);
+            document.add(chunk30);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter2= PatternCanvas.dottedLine_30(pcb);
+            // 添加透明度
+//            PdfGState gs = new PdfGState();
+//            gs.setFillOpacity(0.9f);// 设置透明度为0.8
+//            pcb.setGState(gs);
+//            pcb.setPatternFill(painter2, Color.BLACK);
+            pcb.setPatternFill(painter2, Color.BLACK);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+            /*
+             * 40%
+             */
+            document.newPage();
+            Chunk chunk40 = new Chunk("40%");
+            chunk40.setUnderline(0.1f, -1f);
+            document.add(chunk40);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter40= PatternCanvas.dottedLine_40(pcb);
+            pcb.setPatternFill(painter40, Color.BLACK);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+
+
+
             document.close();
             pdfWriter.close();
             System.out.println("Object drawn on pdf successfully");
