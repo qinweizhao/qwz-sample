@@ -111,6 +111,42 @@ public class PatternCanvas {
 	}
 
 
+
+	public static PdfPatternPainter dottedLine_12_5(PdfContentByte pcb) {
+		float ratio=0.75F;
+
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(8*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+		painter.rectangle(4f*ratio, 1f*ratio, width, height);
+
+
+		painter.fill();
+		return painter;
+	}
+
+
+
+
+	public static PdfPatternPainter dottedLine_15(PdfContentByte pcb) {
+		float ratio=0.75F;
+
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(8*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+		painter.rectangle(4f*ratio, 1f*ratio, width, height);
+
+
+		painter.fill();
+		return painter;
+	}
+
+
+
 	/**
 	 * 浅色下对角线
 	 * @param pcb pcb
@@ -122,8 +158,289 @@ public class PatternCanvas {
 		PdfPatternPainter painter = pcb.createPattern(4/base, 4/base, null);
 		painter.rectangle(0f/base, 3f/base, 0.8f/base, 0.8f/base);
 		painter.rectangle(1f/base, 2f/base, 0.8f/base, 0.8f/base);
-		painter.rectangle(2f/base, 1/base, 0.8f/base, 0.8f/base);
+		painter.rectangle(2f/base, 1f/base, 0.8f/base, 0.8f/base);
 		painter.rectangle(3f/base, 0f/base, 0.8f/base, 0.8f/base);
+
+		painter.fill();
+		return painter;
+	}
+
+
+
+
+	/**
+	 * 浅色棚架
+	 * @param pcb pcb
+	 * @return PdfPatternPainter
+	 */
+	public static PdfPatternPainter lightScaffolds(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+		painter.rectangle(1f*ratio, 2f*ratio, width, height);
+		painter.rectangle(1f*ratio, 4f*ratio, width, height);
+		painter.rectangle(2f*ratio, 1f*ratio, width, height);
+		painter.rectangle(2f*ratio, 5f*ratio, width, height);
+		painter.rectangle(3f*ratio, 0f*ratio, width, height);
+		painter.rectangle(3f*ratio, 6f*ratio, width, height);
+		painter.rectangle(4f*ratio, 7f*ratio, width, height);
+		painter.rectangle(5f*ratio, 0f*ratio, width, height);
+		painter.rectangle(5f*ratio, 6f*ratio, width, height);
+		painter.rectangle(6f*ratio, 1f*ratio, width, height);
+		painter.rectangle(6f*ratio, 5f*ratio, width, height);
+		painter.rectangle(7f*ratio, 2f*ratio, width, height);
+		painter.rectangle(7f*ratio, 4f*ratio, width, height);
+		painter.fill();
+
+		return painter;
+	}
+
+
+	/**
+	 * 深色下斜线
+	 * @param pcb pcb
+	 * @return PdfPatternPainter
+	 */
+	public static PdfPatternPainter darkDownslash(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 2f*ratio, width, height);
+		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+		painter.rectangle(1f*ratio, 1f*ratio, width, height);
+		painter.rectangle(1f*ratio, 2f*ratio, width, height);
+		painter.rectangle(2f*ratio, 0f*ratio, width, height);
+		painter.rectangle(2f*ratio, 1f*ratio, width, height);
+		painter.rectangle(3f*ratio, 0f*ratio, width, height);
+		painter.rectangle(3f*ratio, 3f*ratio, width, height);
+		painter.fill();
+
+		return painter;
+	}
+	/**
+	 * 深色上斜线
+	 * @param pcb pcb
+	 * @return PdfPatternPainter
+	 */
+	public static PdfPatternPainter darkUpslash(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 0f*ratio, width, height);
+		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+		painter.rectangle(1f*ratio, 0f*ratio, width, height);
+		painter.rectangle(1f*ratio, 1f*ratio, width, height);
+		painter.rectangle(2f*ratio, 1f*ratio, width, height);
+		painter.rectangle(2f*ratio, 2f*ratio, width, height);
+		painter.rectangle(3f*ratio, 2f*ratio, width, height);
+		painter.rectangle(3f*ratio, 3f*ratio, width, height);
+		painter.fill();
+
+		return painter;
+	}
+
+
+	/**
+	 * 深色网格
+	 * @param pcb pcb
+	 * @return PdfPatternPainter
+	 */
+	public static PdfPatternPainter darkGrid(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 2f*ratio, width, height);
+		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+		painter.rectangle(1f*ratio, 2f*ratio, width, height);
+		painter.rectangle(1f*ratio, 3f*ratio, width, height);
+		painter.rectangle(2f*ratio, 0f*ratio, width, height);
+		painter.rectangle(2f*ratio, 1f*ratio, width, height);
+		painter.rectangle(3f*ratio, 0f*ratio, width, height);
+		painter.rectangle(3f*ratio, 1f*ratio, width, height);
+		painter.fill();
+
+		return painter;
+	}
+
+
+	/**
+	 * 深色棚架
+	 * @param pcb pcb
+	 * @return PdfPatternPainter
+	 */
+	public static PdfPatternPainter darkScaffolds(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 0f*ratio, width, height);
+		painter.rectangle(0f*ratio, 2f*ratio, width, height);
+		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+		painter.rectangle(1f*ratio, 0f*ratio, width, height);
+		painter.rectangle(1f*ratio, 1f*ratio, width, height);
+		painter.rectangle(1f*ratio, 2f*ratio, width, height);
+		painter.rectangle(2f*ratio, 0f*ratio, width, height);
+		painter.rectangle(2f*ratio, 1f*ratio, width, height);
+		painter.rectangle(2f*ratio, 2f*ratio, width, height);
+		painter.rectangle(3f*ratio, 0f*ratio, width, height);
+		painter.rectangle(3f*ratio, 2f*ratio, width, height);
+		painter.rectangle(3f*ratio, 3f*ratio, width, height);
+		painter.fill();
+
+		return painter;
+	}
+
+
+	/**
+	 * 浅色横线
+	 * @param pcb pcb
+	 * @return PdfPatternPainter
+	 */
+	public static PdfPatternPainter lightHorizontalLine(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(1*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+
+		painter.fill();
+
+		return painter;
+	}
+
+
+	/**
+	 * 浅色竖线
+	 * @param pcb pcb
+	 * @return PdfPatternPainter
+	 */
+	public static PdfPatternPainter lightVerticalLine(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(1*ratio, 4*ratio, null);
+
+		painter.rectangle(3f*ratio, 0f*ratio, width, height);
+
+		painter.fill();
+
+		return painter;
+	}
+
+
+	/**
+	 * 浅色下斜线
+	 * @param pcb pcb
+	 * @return PdfPatternPainter
+	 */
+	public static PdfPatternPainter lightDownwardSlash(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+		painter.rectangle(1f*ratio, 2f*ratio, width, height);
+		painter.rectangle(2f*ratio, 1f*ratio, width, height);
+		painter.rectangle(3f*ratio, 0f*ratio, width, height);
+
+		painter.fill();
+
+		return painter;
+	}
+
+
+
+	/**
+	 * 浅色上斜线
+	 * @param pcb pcb
+	 * @return PdfPatternPainter
+	 */
+	public static PdfPatternPainter lightUpwardSlash(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 0f*ratio, width, height);
+		painter.rectangle(1f*ratio, 1f*ratio, width, height);
+		painter.rectangle(2f*ratio, 2f*ratio, width, height);
+		painter.rectangle(3f*ratio, 3f*ratio, width, height);
+
+		painter.fill();
+
+		return painter;
+	}
+
+
+
+	/**
+	 * 浅色网格
+	 * @param pcb pcb
+	 * @return PdfPatternPainter
+	 */
+	public static PdfPatternPainter lightGrid(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 0f*ratio, width, height);
+		painter.rectangle(1f*ratio, 0f*ratio, width, height);
+		painter.rectangle(2f*ratio, 0f*ratio, width, height);
+		painter.rectangle(3f*ratio, 0f*ratio, width, height);
+		painter.rectangle(3f*ratio, 1f*ratio, width, height);
+		painter.rectangle(3f*ratio, 2f*ratio, width, height);
+		painter.rectangle(3f*ratio, 3f*ratio, width, height);
+
+		painter.fill();
+
+		return painter;
+	}
+
+
+	/**
+	 * 深色横线
+	 * @param pcb pcb
+	 * @return PdfPatternPainter
+	 */
+	public static PdfPatternPainter darkHorizontalLine(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(1*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 0f*ratio, width, height);
+		painter.rectangle(0f*ratio, 1f*ratio, width, height);
+
+		painter.fill();
+		return painter;
+	}
+
+	/**
+	 * 深色竖线
+	 * @param pcb pcb
+	 * @return PdfPatternPainter
+	 */
+	public static PdfPatternPainter darkVerticalLine(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(4*ratio, 1*ratio, null);
+
+		painter.rectangle(2f*ratio, 0f*ratio, width, height);
+		painter.rectangle(3f*ratio, 0f*ratio, width, height);
 
 		painter.fill();
 		return painter;
