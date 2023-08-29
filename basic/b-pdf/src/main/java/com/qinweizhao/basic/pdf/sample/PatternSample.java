@@ -82,6 +82,40 @@ public class PatternSample {
             pcb.sanityCheck();
 
             /*
+             * 12.5%
+             */
+            document.newPage();
+            Chunk chunk12_5 = new Chunk("12.5%");
+            chunk12_5.setUnderline(0.1f, -1f);
+            document.add(chunk12_5);
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painter12_5= PatternCanvas.dottedLine_12_5(pcb);
+            pcb.setPatternFill(painter12_5, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+            /*
+             * 15%
+             */
+            document.newPage();
+            Chunk chunk15 = new Chunk("15%");
+            chunk15.setUnderline(0.1f, -1f);
+            document.add(chunk15);
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painter15= PatternCanvas.dottedLine_15(pcb);
+            pcb.setPatternFill(painter15, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+            /*
              * 20%
              */
             document.newPage();
@@ -144,6 +178,48 @@ public class PatternSample {
             pcb.sanityCheck();
 
 
+            /*
+             * 35%
+             */
+            document.newPage();
+            Chunk chunk35 = new Chunk("35%");
+            chunk35.setUnderline(0.1f, -1f);
+            document.add(chunk35);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter35= PatternCanvas.dottedLine_35(pcb);
+            pcb.setPatternFill(painter35, Color.BLACK);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+            /*
+             * 37.5%
+             */
+            document.newPage();
+            Chunk chunk37_5 = new Chunk("37.5%");
+            chunk37_5.setUnderline(0.1f, -1f);
+            document.add(chunk37_5);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter37_5= PatternCanvas.dottedLine_37_5(pcb);
+            pcb.setPatternFill(painter37_5, Color.BLACK);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+
 
             /*
              * 40%
@@ -160,6 +236,277 @@ public class PatternSample {
 
             PdfPatternPainter painter40= PatternCanvas.dottedLine_40(pcb);
             pcb.setPatternFill(painter40, Color.BLACK);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+
+            /*
+             * 45%
+             */
+            document.newPage();
+            Chunk chunk45 = new Chunk("45%");
+            chunk45.setUnderline(0.1f, -1f);
+            document.add(chunk45);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter45= PatternCanvas.dottedLine_45(pcb);
+            pcb.setPatternFill(painter45, Color.BLACK);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+            /*
+             * 50%
+             */
+            document.newPage();
+            Chunk chunk50 = new Chunk("45%");
+            chunk50.setUnderline(0.1f, -1f);
+            document.add(chunk50);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter50= PatternCanvas.dottedLine_50(pcb);
+            pcb.setPatternFill(painter50, Color.BLACK);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+            /*
+             * 55%
+             */
+            document.newPage();
+            Chunk chunk55 = new Chunk("55%");
+            chunk55.setUnderline(0.1f, -1f);
+            document.add(chunk55);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter55= PatternCanvas.dottedLine_55(pcb);
+            pcb.setPatternFill(painter55, Color.BLACK);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+            /*
+             * 60%
+             */
+            document.newPage();
+            Chunk chunk60 = new Chunk("60%");
+            chunk60.setUnderline(0.1f, -1f);
+            document.add(chunk60);
+
+            pcb.setRGBColorFill(0,0,0);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter60= PatternCanvas.dottedLine_60(pcb);
+            pcb.setPatternFill(painter60, new Color(255,255,255));
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+            /*
+             * 62.5%
+             */
+            document.newPage();
+            Chunk chunk62_5 = new Chunk("62.5%");
+            chunk62_5.setUnderline(0.1f, -1f);
+            document.add(chunk62_5);
+
+            pcb.setRGBColorFill(0,0,0);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter62_5= PatternCanvas.dottedLine_62_5(pcb);
+            pcb.setPatternFill(painter62_5, new Color(255,255,255));
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+            /*
+             * 65%
+             */
+            document.newPage();
+            Chunk chunk65 = new Chunk("65%");
+            chunk65.setUnderline(0.1f, -1f);
+            document.add(chunk65);
+
+            pcb.setRGBColorFill(0,0,0);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter65= PatternCanvas.dottedLine_65(pcb);
+            pcb.setPatternFill(painter65, new Color(255,255,255));
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+
+
+            /*
+             * 70%
+             */
+            document.newPage();
+            Chunk chunk70 = new Chunk("70%");
+            chunk70.setUnderline(0.1f, -1f);
+            document.add(chunk70);
+
+            pcb.setRGBColorFill(0,0,0);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter70= PatternCanvas.dottedLine_70(pcb);
+            pcb.setPatternFill(painter70, new Color(255,255,255));
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+
+            /*
+             * 75%
+             */
+            document.newPage();
+            Chunk chunk75 = new Chunk("75%");
+            chunk75.setUnderline(0.1f, -1f);
+            document.add(chunk75);
+
+            pcb.setRGBColorFill(0,0,0);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter75= PatternCanvas.dottedLine_75(pcb);
+            pcb.setPatternFill(painter75, new Color(255,255,255));
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+            /*
+             * 80%
+             */
+            document.newPage();
+            Chunk chunk80 = new Chunk("80%");
+            chunk80.setUnderline(0.1f, -1f);
+            document.add(chunk80);
+
+            pcb.setRGBColorFill(0,0,0);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter80= PatternCanvas.dottedLine_80(pcb);
+            pcb.setPatternFill(painter80, new Color(255,255,255));
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+            /*
+             * 85%
+             */
+            document.newPage();
+            Chunk chunk85 = new Chunk("85%");
+            chunk85.setUnderline(0.1f, -1f);
+            document.add(chunk85);
+
+            pcb.setRGBColorFill(0,0,0);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter85= PatternCanvas.dottedLine_85(pcb);
+            pcb.setPatternFill(painter85, new Color(255,255,255));
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+            /*
+             * 87.5%
+             */
+            document.newPage();
+            Chunk chunk87_5 = new Chunk("87.5%");
+            chunk87_5.setUnderline(0.1f, -1f);
+            document.add(chunk87_5);
+
+            pcb.setRGBColorFill(0,0,0);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter87_5= PatternCanvas.dottedLine_87_5(pcb);
+            pcb.setPatternFill(painter87_5, new Color(255,255,255));
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+
+
+            /*
+             * 90%
+             */
+            document.newPage();
+            Chunk chunk90 = new Chunk("90%");
+            chunk90.setUnderline(0.1f, -1f);
+            document.add(chunk90);
+
+            pcb.setRGBColorFill(0,0,0);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter90= PatternCanvas.dottedLine_90(pcb);
+            pcb.setPatternFill(painter90, new Color(255,255,255));
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+            /*
+             * 95%
+             */
+            document.newPage();
+            Chunk chunk95 = new Chunk("95%");
+            chunk95.setUnderline(0.1f, -1f);
+            document.add(chunk95);
+
+            pcb.setRGBColorFill(0,0,0);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+
+            PdfPatternPainter painter95= PatternCanvas.dottedLine_95(pcb);
+            pcb.setPatternFill(painter95, new Color(255,255,255));
             pcb.rectangle(100, 400,378.70865F, 38.267715F );
             pcb.fillStroke();
             pcb.sanityCheck();

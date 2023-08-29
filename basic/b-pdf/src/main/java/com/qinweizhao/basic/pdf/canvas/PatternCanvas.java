@@ -544,6 +544,50 @@ public class PatternCanvas {
 	}
 
 
+	public static PdfPatternPainter dottedLine_45(PdfContentByte pcb) {
+
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+
+		PdfPatternPainter painter = pcb.createPattern(8*ratio, 8*ratio, null);
+//		painter.setLineWidth(ratio);
+		painter.rectangle(0f*ratio, 1f*ratio, width, height);
+		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+		painter.rectangle(0f*ratio, 5f*ratio, width, height);
+		painter.rectangle(0f*ratio, 7f*ratio, width, height);
+		painter.rectangle(1f*ratio, 0f*ratio, width, height);
+		painter.rectangle(1f*ratio, 2f*ratio, width, height);
+		painter.rectangle(1f*ratio, 4f*ratio, width, height);
+		painter.rectangle(2f*ratio, 1f*ratio, width, height);
+		painter.rectangle(2f*ratio, 3f*ratio, width, height);
+		painter.rectangle(2f*ratio, 5f*ratio, width, height);
+		painter.rectangle(2f*ratio, 7f*ratio, width, height);
+		painter.rectangle(3f*ratio, 0f*ratio, width, height);
+		painter.rectangle(3f*ratio, 2f*ratio, width, height);
+		painter.rectangle(3f*ratio, 4f*ratio, width, height);
+		painter.rectangle(3f*ratio, 6f*ratio, width, height);
+		painter.rectangle(4f*ratio, 1f*ratio, width, height);
+		painter.rectangle(4f*ratio, 3f*ratio, width, height);
+		painter.rectangle(4f*ratio, 5f*ratio, width, height);
+		painter.rectangle(4f*ratio, 7f*ratio, width, height);
+		painter.rectangle(5f*ratio, 0f*ratio, width, height);
+		painter.rectangle(5f*ratio, 4f*ratio, width, height);
+		painter.rectangle(5f*ratio, 6f*ratio, width, height);
+		painter.rectangle(6f*ratio, 1f*ratio, width, height);
+		painter.rectangle(6f*ratio, 3f*ratio, width, height);
+		painter.rectangle(6f*ratio, 5f*ratio, width, height);
+		painter.rectangle(6f*ratio, 7f*ratio, width, height);
+		painter.rectangle(7f*ratio, 0f*ratio, width, height);
+		painter.rectangle(7f*ratio, 2f*ratio, width, height);
+		painter.rectangle(7f*ratio, 4f*ratio, width, height);
+		painter.rectangle(7f*ratio, 6f*ratio, width, height);
+
+
+		painter.fill();
+		return painter;
+	}
+
 	public static PdfPatternPainter dottedLine_50(PdfContentByte pcb) {
 		float ratio=0.75F;
 		float width = 1f*ratio;
@@ -709,4 +753,74 @@ public class PatternCanvas {
 		return painter;
 	}
 
+
+	public static PdfPatternPainter dottedLine_35(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+
+		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+		painter.rectangle(1f*ratio, 0f*ratio, width, height);
+		painter.rectangle(1f*ratio, 2f*ratio, width, height);
+		painter.rectangle(2f*ratio, 1f*ratio, width, height);
+		painter.rectangle(2f*ratio, 3f*ratio, width, height);
+		painter.rectangle(3f*ratio, 0f*ratio, width, height);
+		painter.rectangle(3f*ratio, 2f*ratio, width, height);
+
+		painter.fill();
+		return painter;
+
+	}
+
+
+	public static PdfPatternPainter dottedLine_37_5(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+
+		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+		painter.rectangle(1f*ratio, 0f*ratio, width, height);
+		painter.rectangle(1f*ratio, 2f*ratio, width, height);
+		painter.rectangle(2f*ratio, 1f*ratio, width, height);
+		painter.rectangle(2f*ratio, 3f*ratio, width, height);
+		painter.rectangle(3f*ratio, 0f*ratio, width, height);
+		painter.rectangle(3f*ratio, 2f*ratio, width, height);
+
+		painter.fill();
+		return painter;
+
+	}
+
+
+	public static PdfPatternPainter dottedLine_75(PdfContentByte pcb) {
+		float ratio=0.75F;
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
+
+		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+		painter.rectangle(2f*ratio, 1f*ratio, width, height);
+
+		painter.fill();
+		return painter;
+	}
+
+	public static PdfPatternPainter dottedLine_95(PdfContentByte pcb) {
+		float ratio=0.75F;
+
+		float width = 1f*ratio;
+		float height = 1f*ratio;
+
+		PdfPatternPainter painter = pcb.createPattern(8*ratio, 8*ratio, null);
+
+		painter.rectangle(1.5f*ratio, 1.5f*ratio, width, height);
+		painter.rectangle(5.5f*ratio, 5.5f*ratio, width, height);
+		painter.fill();
+
+		return painter;
+	}
 }
