@@ -512,6 +512,42 @@ public class PatternSample {
             pcb.sanityCheck();
 
 
+            /*
+             * 深色横线
+             */
+            Chunk chunkDhl = new Chunk("深色横线");
+            chunkDhl.setUnderline(0.1f, -1f);
+            document.add(chunkDhl);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painterDhl= PatternCanvas.darkHorizontalLine(pcb);
+            pcb.setPatternFill(painterDhl, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+            /*
+             * 深色竖线
+             */
+            Chunk chunkDvl = new Chunk("深色竖线");
+            chunkDvl.setUnderline(0.1f, -1f);
+            document.add(chunkDvl);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painterDvl= PatternCanvas.darkVerticalLine(pcb);
+            pcb.setPatternFill(painterDvl, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
 
 
 
