@@ -329,7 +329,7 @@ public class PatternCanvas {
 		float ratio=0.75F;
 		float width = 1f*ratio;
 		float height = 1f*ratio;
-		PdfPatternPainter painter = pcb.createPattern(1*ratio, 4*ratio, null);
+		PdfPatternPainter painter = pcb.createPattern(4*ratio, 1*ratio, null);
 
 		painter.rectangle(3f*ratio, 0f*ratio, width, height);
 
@@ -593,7 +593,7 @@ public class PatternCanvas {
 		float width = 1f*ratio;
 		float height = 1f*ratio;
 
-		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
+		PdfPatternPainter painter = pcb.createPattern(2*ratio, 2*ratio, null);
 
 		painter.rectangle(0f*ratio, 1f*ratio, width, height);
 		painter.rectangle(1f*ratio, 0f*ratio, width, height);
@@ -607,7 +607,7 @@ public class PatternCanvas {
 		float width = 1f*ratio;
 		float height = 1f*ratio;
 
-		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
+		PdfPatternPainter painter = pcb.createPattern(2*ratio, 2*ratio, null);
 
 		painter.rectangle(0f*ratio, 1f*ratio, width, height);
 		painter.rectangle(1f*ratio, 0f*ratio, width, height);
@@ -709,7 +709,7 @@ public class PatternCanvas {
 
 		float width = 1f*ratio;
 		float height = 1f*ratio;
-		PdfPatternPainter painter = pcb.createPattern(8*ratio, 4*ratio, null);
+		PdfPatternPainter painter = pcb.createPattern(8*ratio, 8*ratio, null);
 
 		painter.rectangle(0f*ratio, 3f*ratio, width, height);
 		painter.rectangle(4f*ratio, 1f*ratio, width, height);
@@ -726,7 +726,7 @@ public class PatternCanvas {
 
 		float width = 1f*ratio;
 		float height = 1f*ratio;
-		PdfPatternPainter painter = pcb.createPattern(8*ratio, 4*ratio, null);
+		PdfPatternPainter painter = pcb.createPattern(8*ratio, 8*ratio, null);
 
 		painter.rectangle(0f*ratio, 3f*ratio, width, height);
 		painter.rectangle(4f*ratio, 1f*ratio, width, height);

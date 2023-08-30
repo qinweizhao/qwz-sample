@@ -3,15 +3,18 @@ package com.qinweizhao.basic.pdf.sample;
 import com.lowagie.text.Chunk;
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
+import com.lowagie.text.Font;
 import com.lowagie.text.PageSize;
 import com.lowagie.text.pdf.PdfContentByte;
 import com.lowagie.text.pdf.PdfPatternPainter;
 import com.lowagie.text.pdf.PdfWriter;
 import com.qinweizhao.basic.pdf.canvas.PatternCanvas;
+import com.qinweizhao.basic.pdf.util.FontUtil;
 
 import java.awt.*;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**
  * 空心菱形网格
@@ -267,7 +270,7 @@ public class PatternSample {
              * 50%
              */
             document.newPage();
-            Chunk chunk50 = new Chunk("45%");
+            Chunk chunk50 = new Chunk("50%");
             chunk50.setUnderline(0.1f, -1f);
             document.add(chunk50);
 
@@ -515,7 +518,9 @@ public class PatternSample {
             /*
              * 深色横线
              */
-            Chunk chunkDhl = new Chunk("深色横线");
+            document.newPage();
+            Font font = FontUtil.getFont();
+            Chunk chunkDhl = new Chunk("深色横线",font);
             chunkDhl.setUnderline(0.1f, -1f);
             document.add(chunkDhl);
 
@@ -533,7 +538,8 @@ public class PatternSample {
             /*
              * 深色竖线
              */
-            Chunk chunkDvl = new Chunk("深色竖线");
+            document.newPage();
+            Chunk chunkDvl = new Chunk("深色竖线",font);
             chunkDvl.setUnderline(0.1f, -1f);
             document.add(chunkDvl);
 
@@ -551,6 +557,206 @@ public class PatternSample {
 
 
 
+            /*
+             * 深色下斜线
+             */
+            document.newPage();
+            Chunk chunkDd = new Chunk("深色下斜线",font);
+            chunkDd.setUnderline(0.1f, -1f);
+            document.add(chunkDd);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painterDd= PatternCanvas.darkDownslash(pcb);
+            pcb.setPatternFill(painterDd, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+
+
+            /*
+             * 深色上斜线
+             */
+            document.newPage();
+            Chunk chunkDu = new Chunk("深色上斜线",font);
+            chunkDu.setUnderline(0.1f, -1f);
+            document.add(chunkDu);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painterDu= PatternCanvas.     darkUpslash(pcb);
+            pcb.setPatternFill(painterDu, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+            /*
+             * 深色网格
+             */
+            document.newPage();
+            Chunk chunkDg = new Chunk("深色网格",font);
+            chunkDg.setUnderline(0.1f, -1f);
+            document.add(chunkDg);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painterDg= PatternCanvas.darkGrid(pcb);
+            pcb.setPatternFill(painterDg, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+            /*
+             * 深色棚架
+             */
+            document.newPage();
+            Chunk chunkDs = new Chunk("深色棚架",font);
+            chunkDs.setUnderline(0.1f, -1f);
+            document.add(chunkDs);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painterDs= PatternCanvas.darkScaffolds(pcb);
+            pcb.setPatternFill(painterDs, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+            /*
+             * 浅色横线
+             */
+            document.newPage();
+            Chunk chunkLhl = new Chunk("浅色横线",font);
+            chunkLhl.setUnderline(0.1f, -1f);
+            document.add(chunkLhl);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painterLhl= PatternCanvas.lightHorizontalLine(pcb);
+            pcb.setPatternFill(painterLhl, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+            /*
+             * 浅色竖线
+             */
+            document.newPage();
+            Chunk chunkLvl = new Chunk("浅色竖线",font);
+            chunkLvl.setUnderline(0.1f, -1f);
+            document.add(chunkLvl);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painterLvl= PatternCanvas.lightVerticalLine(pcb);
+            pcb.setPatternFill(painterLvl, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+            /*
+             * 浅色下斜线
+             */
+            document.newPage();
+            Chunk chunkLds = new Chunk("浅色下斜线",font);
+            chunkLds.setUnderline(0.1f, -1f);
+            document.add(chunkLds);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painterLds= PatternCanvas.lightDownwardSlash(pcb);
+            pcb.setPatternFill(painterLds, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+            /*
+             * 浅色上斜线
+             */
+            document.newPage();
+            Chunk chunkLus = new Chunk("浅色上斜线",font);
+            chunkLus.setUnderline(0.1f, -1f);
+            document.add(chunkLus);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painterLus= PatternCanvas.lightUpwardSlash(pcb);
+            pcb.setPatternFill(painterLus, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+            /*
+             * 浅色网格
+             */
+            document.newPage();
+            Chunk chunkLg = new Chunk("浅色网格",font);
+            chunkLg.setUnderline(0.1f, -1f);
+            document.add(chunkLg);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painterLg= PatternCanvas.lightGrid(pcb);
+            pcb.setPatternFill(painterLg, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+            /*
+             * 浅色棚架
+             */
+            document.newPage();
+            Chunk chunkLs = new Chunk("浅色棚架",font);
+            chunkLs.setUnderline(0.1f, -1f);
+            document.add(chunkLs);
+
+            pcb.setRGBColorFill(255,255,255);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.setColorStroke(Color.black);
+            pcb.fillStroke();
+            PdfPatternPainter painterLs= PatternCanvas.lightScaffolds(pcb);
+            pcb.setPatternFill(painterLs, Color.black);
+            pcb.rectangle(100, 400,378.70865F, 38.267715F );
+            pcb.fillStroke();
+            pcb.sanityCheck();
+
+
+
+
+
 
             document.close();
             pdfWriter.close();
@@ -559,6 +765,8 @@ public class PatternSample {
             e.printStackTrace();
         } catch (DocumentException e) {
             e.printStackTrace();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
 
     }
