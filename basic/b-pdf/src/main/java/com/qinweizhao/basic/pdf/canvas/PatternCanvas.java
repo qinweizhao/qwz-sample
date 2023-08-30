@@ -15,66 +15,7 @@ import com.lowagie.text.pdf.PdfPatternPainter;
  *             注意：本内容仅限于元镁科技股份有限公司内部传阅，禁止外泄以及用于其他的商业目的
  */
 public class PatternCanvas {
-	/**
-	 * 网格
-	 *
-	 * @param pcb
-	 * @return: PdfPatternPainter
-	 * @since 1.0
-	 */
-	public static PdfPatternPainter grid(PdfContentByte pcb) {
-		PdfPatternPainter painter = pcb.createPattern(8, 8, null);
-		painter.setLineDash(1, 3, 8F);
 
-		// H-横线
-		painter.moveTo(0, 2);
-		painter.lineTo(8, 2);
-		painter.stroke();
-
-		painter.moveTo(0, 6);
-		painter.lineTo(8, 6);
-		painter.stroke();
-		// V-竖线
-		painter.moveTo(2, 0);
-		painter.lineTo(2, 8);
-		painter.stroke();
-
-		painter.moveTo(6, 0);
-		painter.lineTo(6, 8);
-		painter.stroke();
-		return painter;
-	}
-
-	/**
-	 * 菱形
-	 *
-	 * @param pcb PdfContentByte
-	 * @return PdfPatternPainter PdfPatternPainter
-	 * @since 1.0
-	 */
-	public static PdfPatternPainter diamondGrid(PdfContentByte pcb) {
-		PdfPatternPainter painter = pcb.createPattern(8, 8, null);
-		painter.setLineWidth(0);
-
-
-		painter.moveTo(8, 4);
-		painter.lineTo(4, 8);
-		painter.stroke();
-
-		painter.moveTo(4, 8);
-		painter.lineTo(0, 4);
-		painter.stroke();
-
-		painter.moveTo(0, 4);
-		painter.lineTo(4, 0);
-		painter.stroke();
-
-		painter.moveTo(4, 0);
-		painter.lineTo(8, 4);
-		painter.stroke();
-
-		return painter;
-	}
 
 	public static PdfPatternPainter dottedLine_5(PdfContentByte pcb) {
 		float ratio=0.75F;
@@ -92,9 +33,6 @@ public class PatternCanvas {
 	}
 
 
-
-
-
 	public static PdfPatternPainter dottedLine_10(PdfContentByte pcb) {
 		float ratio=0.75F;
 
@@ -109,7 +47,6 @@ public class PatternCanvas {
 		painter.fill();
 		return painter;
 	}
-
 
 
 	public static PdfPatternPainter dottedLine_12_5(PdfContentByte pcb) {
@@ -144,29 +81,6 @@ public class PatternCanvas {
 		painter.fill();
 		return painter;
 	}
-
-
-
-	/**
-	 * 浅色下对角线
-	 * @param pcb pcb
-	 * @return PdfPatternPainter
-	 */
-	public static PdfPatternPainter lightDiagonalLine(PdfContentByte pcb) {
-		float base=1.4f;
-
-		PdfPatternPainter painter = pcb.createPattern(4/base, 4/base, null);
-		painter.rectangle(0f/base, 3f/base, 0.8f/base, 0.8f/base);
-		painter.rectangle(1f/base, 2f/base, 0.8f/base, 0.8f/base);
-		painter.rectangle(2f/base, 1f/base, 0.8f/base, 0.8f/base);
-		painter.rectangle(3f/base, 0f/base, 0.8f/base, 0.8f/base);
-
-		painter.fill();
-		return painter;
-	}
-
-
-
 
 	/**
 	 * 浅色棚架
