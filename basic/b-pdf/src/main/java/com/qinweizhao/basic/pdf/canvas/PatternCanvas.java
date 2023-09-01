@@ -91,24 +91,17 @@ public class PatternCanvas {
 		float ratio=0.75F;
 		float width = 1f*ratio;
 		float height = 1f*ratio;
+
 		PdfPatternPainter painter = pcb.createPattern(4*ratio, 4*ratio, null);
 
 		painter.rectangle(0f*ratio, 3f*ratio, width, height);
+		painter.rectangle(1f*ratio, 0f*ratio, width, height);
 		painter.rectangle(1f*ratio, 2f*ratio, width, height);
-		painter.rectangle(1f*ratio, 4f*ratio, width, height);
 		painter.rectangle(2f*ratio, 1f*ratio, width, height);
-		painter.rectangle(2f*ratio, 5f*ratio, width, height);
 		painter.rectangle(3f*ratio, 0f*ratio, width, height);
-		painter.rectangle(3f*ratio, 6f*ratio, width, height);
-		painter.rectangle(4f*ratio, 7f*ratio, width, height);
-		painter.rectangle(5f*ratio, 0f*ratio, width, height);
-		painter.rectangle(5f*ratio, 6f*ratio, width, height);
-		painter.rectangle(6f*ratio, 1f*ratio, width, height);
-		painter.rectangle(6f*ratio, 5f*ratio, width, height);
-		painter.rectangle(7f*ratio, 2f*ratio, width, height);
-		painter.rectangle(7f*ratio, 4f*ratio, width, height);
-		painter.fill();
+		painter.rectangle(3f*ratio, 2f*ratio, width, height);
 
+		painter.fill();
 		return painter;
 	}
 
