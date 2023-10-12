@@ -25,7 +25,8 @@ import java.io.IOException;
 public class PatternSample {
     public static void main(String[] args) {
         // Creating a PdfWriter
-        String dest = "/Users/weizhao/Code/qwz/qwz-sample/basic/b-pdf/src/main/resources/out/Pattern.pdf";
+//        String dest = "/Users/weizhao/Code/qwz/qwz-sample/basic/b-pdf/src/main/resources/out/Pattern.pdf";
+        String dest = "E:\\Code\\qwz\\qwz-sample\\basic\\b-pdf\\src\\test\\java\\com\\qinweizhao\\basic\\pdf\\out\\Pattern.pdf";
         canvasLine(dest);
     }
 
