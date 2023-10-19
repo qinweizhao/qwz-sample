@@ -4,7 +4,9 @@ import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
 import com.lowagie.text.PageSize;
 import com.lowagie.text.pdf.PdfContentByte;
+import com.lowagie.text.pdf.PdfPatternPainter;
 import com.lowagie.text.pdf.PdfWriter;
+import com.qinweizhao.basic.pdf.canvas.LineCanvas;
 
 import java.awt.*;
 import java.io.FileNotFoundException;
@@ -13,7 +15,7 @@ import java.io.FileOutputStream;
 public class PdfLine {
 	public static void main(String[] args) {
 		// Creating a PdfWriter
-		String dest = "/Users/weizhao/Code/qwz/qwz-solution/solution-yet/yet-pdf/pdf-demo/src/test/resources/out/drawingLine.pdf";
+		String dest = "E:\\Code\\qwz\\qwz-sample\\basic\\b-pdf\\src\\test\\java\\com\\qinweizhao\\basic\\pdf\\out\\drawingLine.pdf";
 		canvasLine(dest);
 	}
 
@@ -36,22 +38,30 @@ public class PdfLine {
 			pcb.setColorStroke(Color.RED);
 			// pcb.setLineDash(3, 3, 0);
 			// add the diagonal
-			pcb.moveTo(100, 700);
-			pcb.lineTo(200, 700);
-			
-			pcb.moveTo(100.5f, 700);
-			pcb.lineTo(100, 600);
-			
-			pcb.moveTo(100, 600);
-			pcb.lineTo(200, 600);
-			
+//			pcb.moveTo(100, 700);
+//			pcb.lineTo(200, 700);
+//
+//			pcb.moveTo(100.5f, 700);
+//			pcb.lineTo(100, 600);
+//
+//			pcb.moveTo(100, 600);
+//			pcb.lineTo(200, 600);
+//
+//			pcb.moveTo(200, 700);
+//			pcb.lineTo(200, 600);
+//			// stroke the lines
+//			pcb.stroke();
+//
+//			document.newPage();
+
+
 			pcb.moveTo(200, 700);
 			pcb.lineTo(200, 600);
-			// stroke the lines
-			pcb.stroke();
-			document.newPage();
-			pcb.moveTo(200, 700);
-			pcb.lineTo(200, 600);
+			pcb.setLineWidth(3F);
+			float[] array = {1,1};
+			pcb.setLineDash(array,1);
+//			pcb.setLineDash(array,1);
+//			pcb.setLineJoin();
 			// stroke the lines
 			pcb.stroke();
 			document.close();

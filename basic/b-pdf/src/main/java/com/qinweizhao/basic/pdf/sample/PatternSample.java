@@ -736,6 +736,7 @@ public class PatternSample {
 
 
 
+
             /*
              * 浅色棚架
              */
@@ -755,6 +756,23 @@ public class PatternSample {
             pcb.sanityCheck();
 
 
+
+            /*
+             * 浅色网格
+             */
+            document.newPage();
+            Chunk chunkLine = new Chunk("线",font);
+            chunkLine.setUnderline(0.1f, -1f);
+            document.add(chunkLine);
+
+            PdfPatternPainter painterLine= PatternCanvas.line2(pcb);
+            pcb.setPatternFill(painterLine, Color.black);
+//            pcb.rectangle(100, 400,100F, 2F );
+            pcb.rectangle(100, 400,2F, 100F );
+            pcb.setColorStroke(Color.white);
+
+            pcb.fillStroke();
+            pcb.sanityCheck();
 
 
 
