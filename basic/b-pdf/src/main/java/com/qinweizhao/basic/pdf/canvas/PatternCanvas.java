@@ -728,34 +728,14 @@ public class PatternCanvas {
 		painter.rectangle(5.5f*ratio, 5.5f*ratio, width, height);
 		painter.fill();
 
-		return painter;
-	}
 
-	public static PdfPatternPainter line(PdfContentByte pcb) {
-		float ratio=0.75F;
-
-		float width = 1f*ratio;
-		float height = 1f*ratio;
-
-		PdfPatternPainter painter = pcb.createPattern(2*ratio, 1*ratio, null);
-
-		painter.rectangle(0f*ratio, 0f*ratio, width, height);
-		painter.fill();
+		try {
+			System.out.println("try");
+		}finally {
+			System.out.println("finnally");
+		}
 
 		return painter;
 	}
 
-	public static PdfPatternPainter line2(PdfContentByte pcb) {
-		float ratio=0.75F;
-
-		float width = 1f*ratio;
-		float height = 1f*ratio;
-
-		PdfPatternPainter painter = pcb.createPattern(1*ratio, 1*ratio, null);
-
-		painter.rectangle(0f*ratio, 0f*ratio, width, height);
-		painter.fill();
-
-		return painter;
-	}
 }
