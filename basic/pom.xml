@@ -40,6 +40,7 @@
         <module>b-pdf</module>
         <module>b-image</module>
         <module>b-email</module>
+        <module>b-xml</module>
     </modules>
 
 
