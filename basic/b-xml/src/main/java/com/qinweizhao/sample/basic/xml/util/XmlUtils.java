@@ -2,12 +2,10 @@ package com.qinweizhao.sample.basic.xml.util;
 
 
 import org.apache.commons.io.FileUtils;
-import org.dom4j.Document;
-import org.dom4j.DocumentException;
-import org.dom4j.DocumentHelper;
-import org.dom4j.Node;
+import org.dom4j.*;
 
 import java.io.File;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -124,6 +122,29 @@ public class XmlUtils {
         List<String> list = new LinkedList<>();
         nodes.forEach(item -> list.add(item.asXML()));
         return list;
+    }
+
+
+
+
+    public static void showInfo(String xml) throws DocumentException {
+        Document document = DocumentHelper.parseText(xml);
+        Element rootElement = document.getRootElement();
+        Iterator<Element> iterator = rootElement.elementIterator();
+        while (iterator.hasNext()) {
+            Element brand = iterator.next();
+            System.out.println("brand.attributeValue(\"name\")==="+brand.attributeValue("name"));
+
+            Iterator<Element> types = brand.elementIterator();
+            while (types.hasNext()){
+                Element type = types.next();
+
+                System.out.println("type.attributeValue(\"name\")==="+type.attributeValue("name"));
+
+            }
+        }
+
+
     }
 
 

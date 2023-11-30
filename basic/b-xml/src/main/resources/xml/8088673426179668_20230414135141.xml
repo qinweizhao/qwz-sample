@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<POLICY_PRINT>
+<POLICY_PRINT name="test" age="11">
     <INSUREDS>
         <INSURED>
-            <NAME>福宝宝</NAME>
+            <NAME type="A">福宝宝</NAME>
             <GENDER>男</GENDER>
             <AGE>37周岁</AGE>
             <BIRTHDAY>1980年01月01日</BIRTHDAY>
@@ -11,7 +11,7 @@
         </INSURED>
     </INSUREDS>
     <HOLDER>
-        <NAME>福宝宝</NAME>
+        <NAME type="B">福宝宝</NAME>
         <GENDER>男</GENDER>
         <AGE>37周岁</AGE>
         <BIRTHDAY>1980年01月01日</BIRTHDAY>

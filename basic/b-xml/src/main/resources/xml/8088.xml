@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<POLICY_PRINT name="test" age="11">
+    <INSUREDS>
+        <INSURED>
+            <NAME type="A">福宝宝</NAME>
+            <GENDER>男</GENDER>
+            <AGE>37周岁</AGE>
+            <BIRTHDAY>1980年01月01日</BIRTHDAY>
+            <CERTI_TYPE>中国护照</CERTI_TYPE>
+            <CERTI_NO>12547852</CERTI_NO>
+        </INSURED>
+    </INSUREDS>
+
+    <HOLDER>
+        <NAME type="B">福宝宝</NAME>
+        <GENDER>男</GENDER>
+        <AGE>37周岁</AGE>
+        <BIRTHDAY>1980年01月01日</BIRTHDAY>
+        <CERTI_TYPE>中国护照</CERTI_TYPE>
+        <CERTI_NO>12547852</CERTI_NO>
+        <ADDRESS>北京市朝阳区清华大道金融街171号院3层5号</ADDRESS>
+        <MOBILE>18301547523</MOBILE>
+        <HOME_TEL></HOME_TEL>
+        <OFFICE_TEL></OFFICE_TEL>
+        <ZIP_CODE>100010</ZIP_CODE>
+    </HOLDER>
+
+    <IMAGES id="" name="123">
+<!--        <img>123</img>-->
+<!--        <imgA id="" name="">123</imgA>-->
+<!--        <imgA id="" name="">123</imgA>-->
+        <IMAGE id="1" name="2">
+            <FILE_NAME>8088673426179668_20230415_1_38.png</FILE_NAME>
+            <FILE_PATH>/opt/appdata/policyPrint/policyPrintImage/2023/04/15/8088673426179668/8088673426179668_20230415_1_38.png</FILE_PATH>
+            <ORDER_NO>1</ORDER_NO>
+        </IMAGE>
+        <IMAGE>
+            <FILE_NAME>8088673426179668_20230415_2_88.png</FILE_NAME>
+            <FILE_PATH>/opt/appdata/policyPrint/policyPrintImage/2023/04/15/8088673426179668/8088673426179668_20230415_2_88.png</FILE_PATH>
+            <ORDER_NO>2</ORDER_NO>
+        </IMAGE>
+    </IMAGES id="" name="123">
+
+</POLICY_PRINT>

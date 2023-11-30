@@ -1,13 +1,15 @@
-package com.qinweizhao.sample.basic.xml.sip;
+package com.qinweizhao.sample.basic.xml.sip.v2;
 
 
+import com.alibaba.fastjson.JSON;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import com.qinweizhao.sample.basic.xml.sip.v2.test.IMAGES;
+import com.qinweizhao.sample.basic.xml.sip.v2.test.Image;
 import org.apache.commons.io.FileUtils;
-import org.dom4j.Document;
-import org.dom4j.DocumentException;
-import org.dom4j.DocumentHelper;
-import org.dom4j.Element;
+import org.dom4j.*;
 
 import java.io.File;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -18,26 +20,49 @@ public class Utils {
 
     /**
      * xml转 map
+     *
      * @param xml 待转换数据xml字符串
      * @return JSONObject对象
      */
-    public static Map<String,Object> xmlToMap(String xml) {
-        Map<String, Object> map = null;
+    public static Object convert(String xml, Object obj) {
+
+        Object result = null;
         try {
-            map = new HashMap<>();
             Document document = DocumentHelper.parseText(xml);
-            // 获取根节点元素对象
-            Element root = document.getRootElement();
-            iterateNodes(root, map);
+            Method getXpath = obj.getClass().getMethod("getXpath");
+            Object invoke = getXpath.invoke(obj);
+            Node node = document.selectSingleNode(String.valueOf(invoke));
+
+
+            String newXml = node.asXML();
+            Document doc = null;
+            try {
+                doc = DocumentHelper.parseText(newXml);
+            } catch (DocumentException e) {
+                throw new RuntimeException(e);
+            }
+            Element rootElement = doc.getRootElement();
+            Map<String, Object> map = new HashMap<>();
+            iterateNodes(rootElement, map);
+            Object images = map.get(rootElement.getName());
+            String s = JSON.toJSONString(images);
+
+            result = JSON.parseObject(s, obj.getClass());
+
         } catch (Exception e) {
-            return map;
+            e.printStackTrace();
+            return result;
         }
-        return map;
+        return result;
     }
 
     public static void iterateNodes(Element node, Map<String, Object> map) {
         // 获取当前元素的名称
         String nodeName = node.getName();
+        //  属性处理
+        List<Attribute> attributes = node.attributes();
+        Map<String,Object> attrMap = new HashMap<>();
+        attributes.forEach(attr-> attrMap.put(attr.getName(),attr.getValue()));
         // 判断已遍历的 Map 中是否已经有了该元素的名称
         if (map.containsKey(nodeName)) {
             // 该元素在同级下有多个
@@ -45,8 +70,7 @@ public class Utils {
             List<Object> array;
             if (Object instanceof List) {
                 array = (List<java.lang.Object>) Object;
-            }
-            else {
+            } else {
                 array = new ArrayList<>();
                 array.add(Object);
             }
@@ -57,6 +81,7 @@ public class Utils {
                 String nodeValue = node.getTextTrim();
                 array.add(nodeValue);
                 map.put(nodeName, array);
+
                 return;
             }
             // 有子元素
@@ -68,6 +93,7 @@ public class Utils {
             }
             array.add(newJson);
             map.put(nodeName, array);
+
             return;
         }
         // 该元素同级下第一次遍历
@@ -86,22 +112,23 @@ public class Utils {
             // 递归
             iterateNodes(e, object);
         }
+        object.putAll(attrMap);
+
         map.put(nodeName, object);
     }
-
 
 
     //=====================   方法   ==============================//
 
 
-
     public static void main(String[] args) throws Exception {
-        String xml = FileUtils.readFileToString(new File("E:\\Code\\qwz\\qwz-sample\\basic\\b-xml\\src\\main\\resources\\xml\\8088673426179668_20230414135141.xml"));
 
-        Utils utils = new Utils();
-        Map<String, Object> stringObjectMap = utils.xmlToMap(xml);
-        System.out.println(stringObjectMap);
+        String xml = FileUtils.readFileToString(new File("E:\\Code\\qwz\\qwz-sample\\basic\\b-xml\\src\\main\\resources\\xml\\8088.xml"));
+        Image IMAGES = new Image("/POLICY_PRINT/IMAGES/IMAGE");
 
+        Image image = (Image) Utils.convert(xml, IMAGES);
+
+        System.out.println(JSON.toJSONString(image));
 
     }
 
