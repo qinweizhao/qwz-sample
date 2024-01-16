@@ -41,6 +41,7 @@
         <module>b-image</module>
         <module>b-email</module>
         <module>b-xml</module>
+        <module>b-psd</module>
     </modules>
 
 
