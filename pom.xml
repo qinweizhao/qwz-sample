@@ -17,6 +17,7 @@
         <module>middleware</module>
         <module>distributed</module>
         <module>basic/b-sip</module>
+        <module>basic/b-ofd</module>
     </modules>
 
     <properties>

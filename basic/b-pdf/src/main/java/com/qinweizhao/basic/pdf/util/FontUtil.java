@@ -24,7 +24,7 @@ public class FontUtil {
     }
 
     public static BaseFont getBaseFont() throws DocumentException, IOException {
-        return BaseFont.createFont("/Users/weizhao/Code/qwz/qwz-sample/basic/b-pdf/src/test/resources/fonts/SIMHEI.TTF", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+        return BaseFont.createFont("C:\\Windows\\Fonts\\msyh.ttc", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
 
     }
 

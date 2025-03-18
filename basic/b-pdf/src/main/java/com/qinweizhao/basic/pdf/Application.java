@@ -22,16 +22,20 @@ import java.nio.file.Paths;
 public class Application {
 
     public static void main(String[] args) {
+
+
+        String s = System.lineSeparator();
+        System.out.println(s);
 //        Application.test();
 
         // text("这是要写入的文字","/Users/weizhao/Code/qwz/qwz-solution/solution-yet/yet-pdf/pdf-demo/src/test/resources/fonts/SIMHEI.TTF");
 
 //        image();
-        try {
-            test();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            test();
+//        } catch (Exception e) {
+//            throw new RuntimeException(e);
+//        }
     }
 
 
